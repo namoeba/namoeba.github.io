@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the title of your site -->
+	<title>Jain Research Lab at Purdue University</title>
+	<!-- ========= Favicon Icons ========= -->
+	<link rel="shortcut icon" href="#">
+
+	<!-- include Google fonts  -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic%7CPlayfair+Display:400,400italic,700,700italic,900,900italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900%7CRaleway:400,100,200,300,500,600,700,800,900%7CGreat+Vibes%7CPoppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet of bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the font awesome stylesheet  -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22055f2d30.js" crossorigin="anonymous"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<!-- include the stylesheets of headers and footer of the page  -->
+	<link rel="stylesheet" type="text/css" href="css/page-assets.css">
+	<!-- include the helping elements stylesheets of  the page  -->
+	<link rel="stylesheet" type="text/css" href="css/helper-elements.css">
+	<!-- include the site stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- include the site color stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="css/color/color.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- Include bootstrap 5 -->
+    <link rel=”stylesheet” href="css/bootstrap.min.css">
+
+	
+<style>
+	h1, h2, h3, h4 {
+	color: #2e7272;
+	text-transform:uppercase;
+	}
+	
+	#theImage {
+		width: auto;
+		height: auto;
+	}
+	
+	#container {
+		<!--width: auto;-->
+		height: 90px;
+		margin: 0 auto;
+	}
+	.responsive {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	a { 
+		text-decoration: none; 
+	}
+
+	.carousel-control-next-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-indicators [data-bs-target] {
+		box-sizing: content-box;
+		flex: 0 1 auto;
+		width: 30px;
+		height: 3px;
+		padding: 0;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: black;
+		background-clip: padding-box;
+		border: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		opacity: 0.5;
+		transition: opacity 0.6s ease;
+	}	
+	
+	.carousel-indicators .active{background-color: grey !important;}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90541437-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+	<!-- contain main informative part of the site -->
+	<main id="main" role="main">
+		<!-- page banner -->
+		<header class="page-banner small grey" id="shifting">
+			<div class="container">
+                <div class="row align-items-start">
+				<div class="col-sm-5">
+                    <a href="./"><img src="images/jainlogo2.png" width="100%"></a>
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center">
+                        <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"></li><a class="nav-link h6" href="./">HOME</a></li>
+							<li class="nav-item"></li><a class="nav-link h6" href="./about.html">ABOUT</a></li>
+                            <li class="nav-item h6 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">NEWS</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./news/CurrentYear.html">CURRENT YEAR</a></li>
+								<li><a class="dropdown-item" href="./news/2024.html">2024</a></li>
+								<li><a class="dropdown-item" href="./news/2023.html">2023</a></li>
+								<li><a class="dropdown-item" href="./news/2022.html">2022</a></li>
+                                <li><a class="dropdown-item" href="./news/2021.html">2021</a></li>
+                                <li><a class="dropdown-item" href="./news/2020.html">2020</a></li>
+                                <li><a class="dropdown-item" href="./news/2019.html">2019</a></li>
+                                <li><a class="dropdown-item" href="./news/2018.html">2018</a></li>
+                                <li><a class="dropdown-item" href="./news/2017.html">2017</a></li>
+                                <li><a class="dropdown-item" href="./news/2016.html">2016</a></li>
+                                <li><a class="dropdown-item" href="./news/2015.html">2015</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./research.html">RESEARCH</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6 active" href="#">PEOPLE</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./publications.html">PUBLICATIONS</a></li>
+							<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./github.html">GITHUB</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./contact.html">CONTACT</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div> 
+                </div>
+				</div>
+			</div>
+
+		</header>
+
+		
+		<div class="container padding-top-30">
+				<!-- To add a new photo, 0)Resize and crop the image to poa pixels and place it in '\images\group-photos'.
+											1)add a new list (li) item in the ordered list (ol) with the next 'data-slide-to' number
+											2)add a new item to 'carousel-inner' with src and caption 
+											NOTE: JPG and jpg are different while naming files here-->
+				<div class="container">
+					<div class="row align-items-center">
+						<h2 class='text-center'> Meet the lab!</h2>
+						<div class="col-2"></div>
+						
+						<div class="col-8">
+							<div id="PhotoCarousel" class="carousel slide" data-bs-ride="carousel">
+								<!-- Indicators -->
+								<div class="carousel-indicators">
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="9" aria-label="Slide 10"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="10" aria-label="Slide 11"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="11" aria-label="Slide 12"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="12" aria-label="Slide 13"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="13" aria-label="Slide 14"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="14" aria-label="Slide 15"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="15" aria-label="Slide 16"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="16" aria-label="Slide 17"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="17" aria-label="Slide 18"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="18" aria-label="Slide 19"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="19" aria-label="Slide 20"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="20" aria-label="Slide 21"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="21" aria-label="Slide 22"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="22" aria-label="Slide 23"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="23" aria-label="Slide 24"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="24" aria-label="Slide 25"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="25" aria-label="Slide 26"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="26" aria-label="Slide 27"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="27" aria-label="Slide 28"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="28" aria-label="Slide 29"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="29" aria-label="Slide 30"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="30" aria-label="Slide 31"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="31" aria-label="Slide 32"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="32" aria-label="Slide 33"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="33" aria-label="Slide 34"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="34" aria-label="Slide 35"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="35" aria-label="Slide 36"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="36" aria-label="Slide 37"></button>
+									<button type="button" data-bs-target="#PhotoCarousel" data-bs-slide-to="37" aria-label="Slide 38"></button>
+								</div>
+								
+								<!-- Wrapper for slides -->
+								<div class="carousel-inner">
+									
+									<div class="carousel-item active">
+										<img src="images/group-photos/Group-Lunch-Summer-2025.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2025</h5>
+											<p>JRL Alum Austin and Akash join the lab for Lunch</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Lunch-Summer-2025_2.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2025</h5>
+											<p>JRL Alum Austin and Akash visit Purdue</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/Ana-Prof_Jain-2025.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2025</h5>
+											<p>JRL Alum Ana visits Purdue</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/hunter-defense-2025-4.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2025</h5>
+											<p>Jake and Prof. Jain at Jake's Commencement</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/conferences/iTherm_2025_1.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2025</h5>
+											<p>Ara and Prof. Jain at iTherm 2025</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/Herrick-Homecoming-2025.jpg" alt="Summer 2025" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Spring 2025</h5>
+											<p>JRL at the Herrick Homecoming Dinner</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-Summer-2023.png" alt="Summer 2023" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2023</h5>
+											<p>JRL Dinner with current students and their friends</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/Jack-Defense-2023.png" alt="December 2023" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>December 2023</h5>
+											<p>Jack successfully defends his Ph.D. thesis</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/Falak_ITherm_2023.png" alt="Summer 2023" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2023</h5>
+											<p>Falak presents her poster at ITherm 2023</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/ProfJain_2023_AMOS.png" alt="September 2023" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>September 2023</h5>
+											<p>Prof. Jain presents a poster at AMOS 2023</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-SIRI-2023.png" alt="Summer 2023" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2023</h5>
+											<p>SIRI 2023 Kickoff</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/conferences/WiMESymposium2022_2.png" alt="Fall 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>November 2022</h5>
+											<p>Madi and Ara at the Women in Mechanical Engineering Symposium</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-fNIRS2022.png" alt="Fall 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>October 2022</h5>
+											<p>Michael, Jake, and Madi at fNIRS 2022 in Boston, Massachusetts</p>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-Summer-2022.png" alt="Summer 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>August 2022</h5>
+											<p>JRL Dinner with current students and alumni</p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="./images/group-photos/UGR-2022-Photos/SURF-2022-Awards-1.png" alt="June 2022" class="img-fluid d-block w-100">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>August 2022</h5>
+											<p>SURF Award Ceremony</p>
+										</div>
+									</div>
+
+									<div class="carousel-item ">
+										<img src="./images/group-photos/Group-Photo-Marcin-SU2022.png" alt="June 2022" class="img-fluid d-block w-100">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>July 2022</h5>
+											<p>JRL dinner after Marcin's Defense<br> <br> </p>
+										</div>
+									</div>
+
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-ACC-2022.png" alt="June 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>June 2022</h5>
+											<p>ACC 2022 in Atlanta 2022</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/group-photos/Trevor-ACC-bestpaper.png" alt="June 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>June 2022</h5>
+											<p>Congratulations Trevor for winning the ACC 2022 best student paper award!</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/group-photos/Group-Photo-ITherm-June-2022.png" alt="June 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>June 2022</h5>
+											<p>ITherm 2022 in San Diego 2022</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/conferences/Reynolds-ITherm-2022.png" alt="June 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>June 2022</h5>
+											<p>ITherm 2022 in San Diego 2022</p>
+										</div>
+									</div>
+		
+		
+									<div class="carousel-item ">
+										<img src="images/conferences/Michael-ITherm-2022.png" alt="June 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>June 2022</h5>
+											<p>ITherm 2022 in San Diego 2022</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/group-photos/Group-Photo-COWorkshop-May-2022.png" alt="May 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>May 2022</h5>
+											<p>CPS Brainstorm Workshop in Breckenridge Summer 2022</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/conferences/marcin-AIAASciTech-2022.png" alt="January 2022" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>January 2022</h5>
+											<p>AIAA SciTech 2022 in San Diego</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/violet-b-haas-fellowship.png" alt="December 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>December 2021</h5>
+											<p>Violet B. Haas Memorial Fellowship Award Ceremony</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/violet-b-haas-fellowship_2.png" alt="December 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>December 2021</h5>
+											<p>Congratulations Dr. Jain for receiving</p>
+											<p>the Violet B. Haas Memorial Fellowship!</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-SFAlumDinner-October-2021.png" alt="October 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>October 2021</h5>
+											<p>JRL Alum Dinner in San Francisco</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/group-photos/Group-Photo-Summer-2021.png" alt="Summer 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>Summer 2021</h5>
+											<p>Outside Herrick Laboratories</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<img src="images/group-photos/Jain-Williams-Defense-Aug2021.png" alt="Summer 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>August 2021</h5>
+											<p>Masters Defense. Congratulations Katie!</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-Greyhouse-2021.png" alt="Summer 2021" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2021</h5>
+											<p>Coffee Break</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-September-2020.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2020</h5>
+											<p>Picnic anyone?</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-June-2020.png" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<p>Zoom Party. Summer 2020</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Ana-Austin-Commencment-2019.JPG" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>December 2019</h5>
+											<p>Winter Commencment 2019</p>
+											<p>Congratulations Ana and Austin!</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/herrick-commencment-dec19.JPG" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>December 2019</h5>
+											<p>Herrick labs commencement photo </p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-Xmax-2019.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>December 2019</h5>
+											<p>Annual holiday party</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<a href="./research.html#hmi"><img src="images/authors_candid_with_human_subject_study_testbed.JPG" alt="Summer 2019" class="img-fluid d-block w-100						"></a>
+										<div class="carousel-caption d-none d-md-block">
+											<p>Studying trust in human machine interactions</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<img src="images/group-photos/Jain-Guerrero-Defense-Dec2019.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>December 2019</h5>
+											<p>Final PhD defense. Congrats Dr. Guerrero!</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<a href="./research.html#hmi"><img src="images/authors_front_facing_with_driving_simulator.JPG" alt="Summer 2019" class="img-fluid d-block w-100						"></a>
+										<div class="carousel-caption d-none d-md-block">
+											<p>Driving simulator</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<img src="images/group-photos/Jain-Nash-Defense-Nov2019.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>November 2019</h5>
+											<p>Final PhD defense. Congrats Dr. Nash!</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<img src="images/conferences/trevor-DSCC19Award.JPG" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>October 2019</h5>
+											<p>DSCC ESTC best paper award.</p>
+											<p>Congrats Trevor!</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<a href="./research.html#hmi"><img src="images/semi-research-HP.JPG" alt="Summer 2019" class="img-fluid d-block w-100						"></a>
+										<div class="carousel-caption d-none d-md-block">
+											<p>Research in platooning of Class 8 trucks</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item ">
+										<img src="images/conferences/Group-Photo-DSCC-2019.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>October 2019</h5>
+											<p>Dynamic Systems and Control Conference 2019</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-July-2019.jpg" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2019</h5>
+											<p>Outside Herrick Laboratories</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-August-2018.JPG" alt="Summer 2018" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<p>Celebration after Ana's and Austin's prelim exams Summer 2018</p>
+										</div>
+									</div>
+									
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-Summer-2018.JPG" alt="Summer 2018" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2018</h5>
+											<p>Outside Herrick Laboratories</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Photo-July-2017.JPG" alt="Summer 2017" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2017</h5>
+											<p>After Yeshaswi's defense</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item ">
+										<img src="images/group-photos/Jain-Menghmalani-July2017.JPG" alt="Summer 2019" class="img-fluid d-block w-100						">
+										<div class="carousel-caption d-none d-md-block">
+											<h5>July 2017</h5>
+											<p>Masters defense. Congrats Yeshaswi!</p>
+										</div>
+									</div>
+		
+									<div class="carousel-item">
+										<img src="images/group-photos/Group-Dinner-Summer-2016.JPG" alt="Summer 2016" class="img-fluid d-block w-100						">
+										<div class="carousel-caption">
+											<h5>Summer 2016</h5>
+											<p>Dinner at Dr. Jain's house</p>
+										</div>
+									</div>
+								</div>
+								<button class="carousel-control-prev" type="button" data-bs-target="#PhotoCarousel" data-bs-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Previous</span>
+								</button>
+								<button class="carousel-control-next" type="button" data-bs-target="#PhotoCarousel" data-bs-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="visually-hidden">Next</span>
+								</button>
+							</div>
+						</div>	
+						<div class="col-2"></div>
+					</div>
+				</div>
+				<br>
+					
+		</div>
+
+		<div class="container padding-bottom-30 ">
+		    <div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="row padding-bottom-30">
+						<hr/>
+						<h1>People</h1>
+						<hr/>
+						</div>
+						<div class="col">
+							
+							<!-- Use a float instead of responsive image and fix width -->
+							<div class="container">
+								<div class="col-xs-12">	
+									<div style="float:left;width:230px;margin-top:10px;margin-right:30px;margin-bottom:10px">
+										<img src="images/headshots/jain-neera-2.jpg" style="" width="100%">
+									</div>
+									<h3>Neera Jain, Ph.D.<span style="font-size:18px;"> - Associate Professor of Mechanical Engineering</span></h3>
+									<div align="justify">
+										<p>Dr. Neera Jain is an Associate Professor in the School of Mechanical Engineering and a faculty member in the Ray W. Herrick Laboratories at Purdue University. She directs the Jain Research Laboratory with the aim of advancing technologies that will have a lasting impact on society through a systems-based approach, grounded in dynamic modeling and control theory. Two major applications that motivate her work include human-autonomy teaming and energy management in buildings and vehicles. Dr. Jain earned her M.S. and Ph.D. degrees in mechanical engineering from the University of Illinois at Urbana-Champaign in 2009 and 2013, respectively. She earned her S.B. from the Massachusetts Institute of Technology in 2006. She has held visiting research positions at Mitsubishi Electric Research Laboratories, Air Force Research Laboratory (AFRL) at Wright-Patterson Air Force Base (AFB) (Aerospace Systems Directorate) and AFRL at Kirtland AFB (Space Vehicles Directorate). She is the recipient of the 2022 NSF CAREER Award, a National Research Council (NRC) Research Associateship Award, the 2023 ASME Dynamic Systems and Control Division Outstanding Young Investigator Award, and the 2024 Rudolf Kalman Best Paper Award. As a contributor for Forbes.com, she has written on the topic of human interaction with automation and its importance in society. </p>
+									</div>
+								</div>
+							</div>
+
+
+							<!-- <div class="container">
+							<hr/>
+							<h3>Postdoctoral Scholars</h3>
+							<hr/>
+
+								<div class="row">
+									<div class="col-md-2"> 
+										<img src="images/headshots/inyang-udoh-uduak.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-10"> 
+										<h3 id="uinyangu">Uduak Inyang-Udoh, Ph.D</h3>
+										<ul>
+											<li>uinyangu <i class="bi bi-at"></i> purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Rensselaer Polytechnic Institute 2021</li>
+											<li>B.S. Mechanical Engineering - University of Lagos 2016</li>
+											<li>Research Project: Control Co-design of Hybrid Thermal Management Systems</li>
+										</ul>
+									</div>
+									
+								</div>
+								<hr/>
+								<div class="row">
+									<div class="col-md-2"> 
+										<img src="images/headshots/bird-trevor.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-10"> 
+										<h3 id="bird6">Trevor Bird, Ph.D</h3>
+										<ul>
+											<li>bird6 <i class="bi bi-at"></i> purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2022</li>
+											<li>M.S. Mechanical Engineering – Purdue University 2020</li>
+											<li>B.S. Mechanical Engineering - Utah State University 2017</li>
+											<li>Recipient of: NSF Graduate Research Fellowship, Herrick Assistantship 2018, and Purdue University Ingersoll-Rand Fellowship 2017</li>
+											<li><a href="./cv/CV_TBird.pdf">Curriculum Vitae</a></li>
+										</ul>
+									</div>
+									
+								</div>
+								
+							</div>  -->
+							
+							<hr/>
+							<h3>Graduate Students</h3>
+							<hr/>
+							
+							<div class="container">
+
+								<div class="row">
+
+									<div class="col-md-2">
+										<img src="images/headshots/bayad-isha1.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-4">
+										<h3 id="ibayad">Isha Bayad</h3>
+										<ul>
+											<li>ibayad@purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (expected 2028)</li>
+											<li>B.S. Chemical Engineering - Indian Institute of Technology Gandhinagar (India) 2023</li>
+											<li>Research Project: Control System Design for Thermal Systems</li>
+
+										</ul>
+									</div> 
+
+									<div class="col-md-2">
+										<img src="images/headshots/broniszewski-joe.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-4">
+										<h3 id="jbronisz">Joseph Broniszewski</h3>
+										<ul>
+											<li>jbronisz@purdue.edu</li>
+											<li>M.S. Mechanical Engineering - Purdue University (expected 2026)</li>
+											<li>B.S. Mechanical Engineering - The Pennsylvania State University 2023</li>
+											<li>Research Project: Control System Design for Hybrid Thermal Management Systems</li>
+
+										</ul>
+									</div> 
+
+									
+									
+								</div>
+								
+								<hr/>
+								
+								<div class="row">
+
+									
+									
+									<div class="col-md-2">
+										<img src="images/headshots/gulewicz-demetrius.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-4">
+										<h3 id="dgulewic">Demetrius Gulewicz</h3>
+										<ul>
+											<li>dgulewic@purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (expected 2027)</li>
+											<li>B.S. Mechanical Engineering - Purdue University 2023 </li>
+											<li>Research Project: Control System Design for Thermal Systems</li>
+
+										</ul>
+									</div> 
+
+									<div class="col-md-2">
+										<img src="images/headshots/jeevanandam-sibibalan.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-4">
+										<h3 id="sjeevana">Sibibalan (Sibi) Jeevanandam</h3>
+										<ul>
+											<li>sjeevana@purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (expected 2027)</li>
+											<li>B.S. Mechanical Engineering - Indian Institute of Technology Tirupati (India) 2022</li>
+											<li>Research Project: Enabling Human-aware and Responsive Automation through Cognitive State Modeling and Estimation</li>
+											<li>Recipient of: ME Winkelman Fellowship 2022</li>
+										</ul>
+									</div>
+									
+									
+
+								</div>
+
+								<hr/>
+								
+								<div class="row">
+
+									<div class="col-md-2"> 
+										<img src="images/headshots/mathur-yash.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									<div class="col-md-4"> 
+										<h3 id="mathury">Yash Mathur</h3>
+										<ul>
+											<li>mathury@purdue.edu</li>
+											<li>M.S. Mechanical Engineering - Purdue University (expected 2026)</li>
+											<li>B.S. Mechanical Engineering - Purdue University 2024</li>
+											<li>Research Project: Control System Design for Thermal Systems </li>
+										</ul>
+									</div>
+
+
+									<div class="col-md-2"> 
+										<img src="images/headshots/vyas-vismay1.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									<div class="col-md-4"> 
+										<h3 id="vvyas">Vismay Vyas</h3>
+										<ul>
+											<li>vyas53@purdue.edu</li>
+											<li>M.S. Mechanical Engineering - Purdue University (expected 2026)</li>
+											<li>B.S. Mechanical Engineering - University of Illinois at Urbana-Champaign</li>
+											<li>Research Project: Aircraft Thermal Management System Design and Optimization</li>
+										</ul>
+									</div>
+
+									
+								<hr/>
+								
+								<div class="row">
+
+
+									<div class="col-md-2">
+										<img src="images/headshots/wielatz-maggie.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									
+									<div class="col-md-4">
+										<h3 id="mwielatz">Margaret Wielatz</h3>
+										<ul>
+											<li>mwielatz@purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (expected 2028)</li>
+											<li>B.S. Aerospace Engineering - University of Florida 2024</li>
+											<li>Research project: Human-Machine Interaction</li>
+										</ul>
+									</div>
+									<!--
+															<div class="col-md-2"> 
+										<img src="images/headshots/yuh-madeleine.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									<div class="col-md-4"> 
+										<h3 id="myuh">Madeleine Yuh</h3>
+										<ul>
+											<li>myuh@purdue.edu</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (expected 2026)</li>
+											<li>M.S. Mechanical Engineering - Purdue University 2024</li>
+											<li>B.S. Mechanical Engineering - University of Illinois at Chicago 2020</li>
+											<li>Research Project: Cognitive-based Control for Human CPS</li>
+											<li>Recipient of: Purdue University Frederick N. Andrews Fellowship 2020</li>
+											<li><a href="./cv/CV_MYuh.pdf">Curriculum Vitae</a></li>
+										</ul>
+									</div>
+									-->
+								</div>
+
+								<hr/>
+
+								
+
+			
+
+							</div>
+
+
+							<h3>Current Undergraduate Students</h3>
+							<hr/>
+							<!--
+							<div class="container">
+								<div class="row">
+									<div class="col-md-2"> 
+										<img src="images/headshots/krishnamoorthy-pranav.jpg" class="img-fluid max-width:80% height: auto">
+									</div>
+									<div class="col-md-4"> 
+										<h3>Pranav Krishnamoorthy</h3>
+										<ul>
+											<li>krish227@purdue.edu</li>
+											<li>B.S. Aeronautical and Astronautical Engineering - Purdue University (expected 2026)</li>
+											<li>Research Project: Thermal Energy Storage System Refrigerant Modelling and Cycle Analysis</li>		
+										</ul>
+									</div> 
+
+									<div class="col-md-2"> 
+										<img src="images/headshots/pagadala-chandana.png" class="img-fluid max-width:80% height: auto">
+									</div>
+									<div class="col-md-4"> 
+										<h3>Chandana Pagadala</h3>
+										<ul>
+											<li>cpagadal@purdue.edu</li>
+											<li>B.S. Computer Engineering - Purdue University (expected 2029)</li>
+											<li>Research Project: Low-dimensional dynamic modeling of human cognition </li>		
+										</ul>
+									</div> 
+								</div>
+							</div> 
+							<hr/>
+							-->
+							<h3>Recent Alumni</h3>
+							<hr/>
+							<div class="container">
+								<div class="row">
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/yuh-madeleine.jpg" class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Madeleine Yuh</h4>
+										<ul style="list-style-position: inside">
+											<li>Ph.D. Mechanical Engineering - Purdue University</li>
+											<li>Research Project: Cognitive-based Control for Human CPS</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/hunter-jake.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Jake Hunter</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Postdoctoral Researcher, Georgia Institute of Technology</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University (co-advised with <a href="https://engineering.purdue.edu/ME/People/ptProfile?resource_id=74127">Dr. Tahira Reid Smith)</a></li>
+											<li>Research Project: Objective Design Fixation Analysis as a Basis for AI-Designer Teaming in Constrained Design</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/dewanatha-pandu.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Pandu Dewanatha</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Hybrid Controls Engineer - Stellantis</li>
+											<li>M.S. Mechanical Engineering - Purdue University</li>
+											<li>Research Project: Systems Modeling of Thermal Management System for Battery Electric Vehicles</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/bolander-ara.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Ara Bolander</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Lead Engineer - PC Krause and Associates</li>
+											<li>M.S. Mechanical Engineering - Purdue University</li>
+											<li>Research Project: Graph-Based Modeling of Transient Thermal Management Systems</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/rabb-ethan.JPG"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Ethan Rabb</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Student Officer, U.S. Army</li>
+											<li>M.S. Mechanical Engineering - Purdue University</li>
+											<li>Research Project: Cognitive State Modeling for Human CPS</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/ruan-jianqi.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Jianqi Ruan</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Process engineer - Castrip LLC</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2024</li>
+											<li>Research Project: Automation of Twin Roll Strip Casting</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/bird-trevor.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Trevor Bird</h4>
+										<ul style="list-style-position: inside">
+											<!-- <li>Position Upon Graduation: </li> -->
+											 <li>Position Upon Graduation: Senior Lead Engineer - PC Krause and Associates</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2022</li>
+											<li>Dissertation: Hybrid Zonotopes: A Mixed-Integer Set Representation for the Analysis of Hybrid Systems</li>
+											<li>Recipient of: NSF Graduate Research Fellowship, Herrick Assistantship 2018, and Purdue University Ingersoll-Rand Fellowship 2017</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12"> 
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/konishi-matthew.JPG" class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Matthew Konishi</h4>
+										<ul style="list-style-position: inside">
+											<li>M.S. Mechanical Engineering - Purdue University 2022</li>
+											<li>Thesis: Inferring Takeover and Trust in SAE Level 2 Automated Vehicles</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12"> 
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/shanks-michael.jpg" class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Michael Shanks</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Engineer Systems Architect - Northrop Grumman</li>
+											<li>M.S. Mechanical Engineering - Purdue University 2022</li>
+											<li>Thesis: Design, Control, and Validation of a Transient Thermal Management System with Integrated Phase-Change Thermal Energy Storage</li>
+										</ul>
+									</div>
+
+
+									<div class="col-xs-12"> 
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/glebocki-marcin.jpg" class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Marcin Glebocki</h4>
+										<ul style="list-style-position: inside">
+											<li>M.S. Mechanical Engineering - Purdue University 2022</li>
+											<li>Recipient of: Purdue University Ingersoll-Rand Fellowship 2020</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12"> 
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/williams-katie.JPG" class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Katherine (Katie) Williams</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Systems Engineer II - Lam Research</li>
+											<li>M.S. Mechanical Engineering - Purdue University 2021</li>
+											<li>Thesis: Cognitive Modeling for Human-Automation Interaction: A Computational Model of Human Trust and Self-confidence</li>
+										</ul>
+									</div>
+
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/browne-florian.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Florian (Rian) Browne</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Carrier Graduate Hire Program - MBD Dynamic Modeling, Carrier</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2020</li>
+											<li>Dissertation: Robust Iterative Learning Control for Linear Parameter Systems with Time Delay</li>
+											<li>Recipient of: Laura Winkelman Davidson Fellowship 2015</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/akash-kumar.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Kumar Akash</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Scientist - Honda Research Institute USA, Inc.</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2020</li>
+											<li>Dissertation:  Reimagining Human-Machine Interactions through Trust-Based Feedback</li>
+											<li>Recipient of: Bilsland Dissertation Fellowship 2019</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/gohil-karan.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Karan Gohil</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: XR Thermal Engineer, Qualcomm</li>
+											<li>M.S. Mechanical Engineering - Purdue University 2020</li>
+											<li>Thesis: Reduced-Order Modeling and Design Optimization of Metal-PMC Composit Heat Exchangers</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/guerrero-ana.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Ana Isabel Guerrero de la Peña</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Technical Specialist - Systems Performance Analysis Engineer, Cummins Inc.</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2019</li>
+											<li>Dissertation: Development of a Framework for Projecting Line-Haul Truck Technology Adoption and Greenhouse Gas Emissions in the U.S. using a System-of-Systems Methodology</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/nash-austin.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4 >Austin Nash</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Assistant Professor, Kettering University</li>
+											<li>Ph.D. Mechanical Engineering - Purdue University 2019</li>
+											<li>Dissertation:  Hierarchical Combined Plant and Control Design for Thermal Management Systems</li>
+											<li>Recipient of: Purdue University Ingersoll-Rand Fellowship 2015 and Lambert Teaching Fellowship 2018</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/tam-aaron.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4>Aaron Tam</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Engineering Scientist, Electric Power Research Institute (EPRI)</li>
+											<li>M.S. Mechanical Engineering – Purdue University 2018 </li>
+											<li>Thesis: Optimal Design and Control of Residential Air-Conditioning Equipment with Integrated Thermal Storage</li>
+										</ul>
+									</div>
+									
+									<div class="col-xs-12">
+										<div style="float:left;margin-right:30px;margin-bottom:10px">
+											<img src="images/headshots/menghmalani-yeshaswi.jpg"  class="img-responsive" style="max-height: 160px">
+										</div>
+										<h4>Yeshaswi Menghmalani</h4>
+										<ul style="list-style-position: inside">
+											<li>Position Upon Graduation: Engineering Development Program - Senior IoT Systems Engineer, Cummins Inc.</li>
+											<li>M.S. Mechanical Engineering - Purdue University 2017</li>
+											<li>Thesis: Right Fidelity Dynamic Engine Modeling and Validation</li>
+											<li>Recipient of Cummins-Purdue Fellowship 2015</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+							
+							<hr/>
+							<h3>Past Undergraduate Students</h3>
+							
+							<ul>
+							<div class="row">
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Yilin Shao (Summer 2025 - Summer 2026) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Pranav Krishnamoorthy (Summer 2025 - Spring 2026) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Chandana Pagadala (Spring 2026 - Spring 2026) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Emanulele Bossi (Summer 2025 - Summer 2025) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Mason Kramer (Summer 2024 - Summer 2025) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Henry Lee (Summer 2025) </li>
+								</div>
+								</h4>
+								<div class="row"></div>
+								<h4><div class="col-xs-3">
+									<li>Steven Schonlau (Fall 2024 - Spring 2025) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Maitri Pandya (Fall 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Xipeng Wang (Summer 2023 - Fall 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Tyler Hsieh (Summer & Fall 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Jasdeep Singh (Summer 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Albert Li (Summer 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Ilhoon Lee (Summer 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Nikolai Baranov (Summer 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Mason Kramer (Summer 2024) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Bao Quoc Phan (Summer 2023) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Douglas Nyberg (Summer 2023) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Matthew Beecher (Summer 2023) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+									<li>Kylie Sommer-Korht (Summer 2022 - Spring 2023) </li>
+								</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Noah Michelini (Summer 2021 - Fall 2021, Summer 2022 - Fall 2022) </li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Falak Mandali (Summer 2022 - Fall 2022) </li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Darin Lin (Summer 2021 - Fall 2021, Summer 2022 - Fall 2022)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Kasidit Muenprasitivej (Summer 2022)</li>
+									</div>	
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Soojay Jhugaroo (Summer 2022)</li>
+									</div>		
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Henry Lewis (Summer 2021 - Fall 2021)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Alex Kokal (Fall 2021)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Nikita Sridhar (Summer 2021)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Ikechukwu Obi-Okoye (Summer 2021 - Spring 2022)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Ahmed Baraka (Summer 2021)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Apurva Badithela (Summer 2016)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>William Senior (Summer 2016)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Woo June (Andrew) Jung (Spring 2017)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Katelyn Polson (Fall 2017 - Spring 2018)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Catherine Weaver (Summer 2017 - Spring 2019)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Anay Shembekar (Summer 2019)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Judy Park (Fall 2019)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Hayden Schennum (Spring 2020)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Griffon McMahon (Fall 2018 - Spring 2020)</li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Mohammed Matar (Fall 2019 - Spring 2020) </li>
+									</div>
+								</h4>
+								<h4><div class="col-xs-3">
+										<li>Brendan Gillis (Summer 2019 - Spring 2021) </li>
+									</div>
+								</h4>
+
+							</div>
+							</ul>
+							
+							
+														
+						</div>
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+	</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<!-- footer top -->
+			<div class="footer-top bg-shark">
+				<div class="container padding-top-30">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="holder">
+							<img src="./images/Eng-White.png" style="width:200px;height:auto;" class="mx-auto d-block">
+							<hr/>
+								<div align="center">
+								<p>Copyright © 2015-2023 JAIN Research Lab - All Rights Reserved</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!-- include JavaScript Plugins -->
+	<script type="text/javascript" src="js/plugins.js"></script>
+	
+	<script src="js/jquery.backstretch.js"></script>
+	<script>
+        $("#shifting").backstretch([
+          "./images/city_bg2.jpg",
+          "./images/steel-jain.jpg",
+          "./images/science-thoughts.jpg"
+        ], {
+            fade: 750,
+            duration: 5000
+        });	
+    	</script>
+
+	<!-- Bootstrap 5.0 js -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the title of your site -->
+	<title>Jain Research Lab at Purdue University</title>
+	<!-- ========= Favicon Icons ========= -->
+	<link rel="shortcut icon" href="#">
+
+	<!-- include Google fonts  -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic%7CPlayfair+Display:400,400italic,700,700italic,900,900italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900%7CRaleway:400,100,200,300,500,600,700,800,900%7CGreat+Vibes%7CPoppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet of bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the font awesome stylesheet  -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22055f2d30.js" crossorigin="anonymous"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<!-- include the stylesheets of headers and footer of the page  -->
+	<link rel="stylesheet" type="text/css" href="css/page-assets.css">
+	<!-- include the helping elements stylesheets of  the page  -->
+	<link rel="stylesheet" type="text/css" href="css/helper-elements.css">
+	<!-- include the site stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- include the site color stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="css/color/color.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- Include bootstrap 5 -->
+    <link rel=”stylesheet” href="css/bootstrap.min.css">
+
+	
+<style>
+	h1, h2, h3, h4 {
+	color: #2e7272;
+	text-transform:uppercase;
+	}
+	
+	#theImage {
+		width: auto;
+		height: auto;
+	}
+	
+	#container {
+		<!--width: auto;-->
+		height: 90px;
+		margin: 0 auto;
+	}
+	.responsive {
+		max-width: 100%;
+		height: auto;
+	}
+	
+	a { 
+		text-decoration: none; 
+	}
+
+	.carousel-control-next-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-indicators [data-bs-target] {
+		box-sizing: content-box;
+		flex: 0 1 auto;
+		width: 30px;
+		height: 3px;
+		padding: 0;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: black;
+		background-clip: padding-box;
+		border: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		opacity: 0.5;
+		transition: opacity 0.6s ease;
+	}	
+	 
+	.carousel-indicators .active{background-color: grey !important;}
+	p {
+		
+	}
+	.narrow-list {
+            margin-left: 350px; /* Narrower margin for the list */
+            margin-right: 0px; /* Optional: control right margin too */
+        }
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90541437-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+	<!-- contain main informative part of the site -->
+	<main id="main" role="main">
+		<!-- page banner -->
+		<header class="page-banner small grey" id="shifting">
+			<div class="container">
+                <div class="row align-items-start">
+				<div class="col-sm-5">
+                    <a href="./"><img src="images/jainlogo2.png" width="100%"></a>
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center">
+                        <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"></li><a class="nav-link h6" href="./">HOME</a></li>
+							<li class="nav-item"></li><a class="nav-link h6" href="./about.html">ABOUT</a></li>
+                            <li class="nav-item h6 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">NEWS</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./news/CurrentYear.html">CURRENT YEAR</a></li>
+								<li><a class="dropdown-item" href="./news/2024.html">2024</a></li>
+								<li><a class="dropdown-item" href="./news/2023.html">2023</a></li>
+								<li><a class="dropdown-item" href="./news/2022.html">2022</a></li>
+                                <li><a class="dropdown-item" href="./news/2021.html">2021</a></li>
+                                <li><a class="dropdown-item" href="./news/2020.html">2020</a></li>
+                                <li><a class="dropdown-item" href="./news/2019.html">2019</a></li>
+                                <li><a class="dropdown-item" href="./news/2018.html">2018</a></li>
+                                <li><a class="dropdown-item" href="./news/2017.html">2017</a></li>
+                                <li><a class="dropdown-item" href="./news/2016.html">2016</a></li>
+                                <li><a class="dropdown-item" href="./news/2015.html">2015</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6 active" href="#">RESEARCH</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./people.html">PEOPLE</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./publications.html">PUBLICATIONS</a></li>
+							<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./github.html">GITHUB</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./contact.html">CONTACT</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div> 
+                </div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="container padding-bottom-15 padding-top-30">
+			<div class="row">
+				<div class="col-1"></div>
+				<div class="col-10">
+					<div class="row">
+						<h1>Research</h1>
+					</div>
+					
+					<div class="row">
+
+						<div class="col">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./research.html#ongoing_projects">&#9658;Ongoing Projects</a> </h3>
+						</div>
+
+						<div class="col">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./research.html#past_projects">&#9658;Past Projects</a></h3>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-1"></div>
+			</div>
+		</div>
+
+		<div class="container padding-bottom-15 padding-top-15">
+
+		   	<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<hr/>
+					<div class="row padding-bottom-30">
+						<h1 id="ongoing_projects">Ongoing Projects</h1>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<hr/>
+							<div class="row">
+								<h3>Human-Automation Interaction</h3>
+								<div class="clearfix">
+									<div class="container col-md-4 float-md-start mb-2 mt-2 ms-0 me-0">
+										<figure">
+											<img src="./images/driving-simulator.jpg" alt="..." class="img-fluid" >
+											<figcaption><div align="center">Medium-fidelity driving simulator for HMI research</div></figcaption>
+										</figure>
+										<br>
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Mucl6pAgEQg?rel=0" allowfullscreen width="100%"></iframe>
+									</div>
+									<div align="justify">
+										<p>
+											<!-- With increasing automation in all aspects of society, humans are being tasked with interacting and collaborating with autonomous systems in a variety of contexts.  At the core of successful cooperation between human and machine is trust. To that end, we are interested in mathematically modeling how human trust, and other human behaviors, evolve during interactions with automated systems and how feedback control principles can be applied to achieve the promise of automation---improving human quality of life.
+											Through collaborations with the <a href="https://engineering.purdue.edu/reidlab/" target="_blank">REID Lab</a> here at Purdue, we have published several articles on this topic that consider novel ways of estimating human trust via psychophysiological sensing (such as galvanic skin response (GSR) and electroencephalography (EEG)) as well as using behavioral data.  More recently we extended our modeling to include human workload, and we have demonstrated, experimentally, the use of adaptive user interface (UI) transparency for improving human performance when assisted by an automated decision aid.
+											We have several ongoing projects in our group that build on our foundational work in this area.  This includes human cognitive state-based control for automation designed to assist humans with skill building and modeling of human trust across multiple timescales. We are also studying how human operators make decisions in process manufacturing and using machine learning techniques to assess how automation, combined with operator expertise, can achieve better, and more consistent performance. -->
+											Across all aspects of our lives, humans are being asked to interact, collaborate, and team with different types of autonomous systems.  At the core of successful cooperation between human and machine is trust. To that end, we are interested in mathematically modeling how human trust, and other human cognitive states (mental workload, self-confidence, risk perception), evolve during their interactions with machines and how feedback control principles can be applied to achieve the promise of automation—improving human quality of life. We have published several articles in this area, including on
+											
+											<ul class = "narrow-list">
+												<li>novel machine learning-based approaches for estimating human trust via physiological (galvanic skin response (GSR) and electroencephalography (EEG) as well as behavioral measures;</li>
+												<li>Markov-based modeling of human trust and workload during human interactions with recommender (decision aid) systems that we in turn use for adaptive user interface (UI) design;  </li>
+												<li>cognitively-aware intelligent tutoring/training systems (ITSs) that leverage self-confidence feedback from the human, and models of how user performance affects self-confidence, to determine when to provide automation assistance to users learning a psychomotor task.</li>
+											</ul>
+											We are also studying how human operators make decisions in process manufacturing and using machine learning techniques to assess how automation, combined with operator expertise, can achieve better, and more consistent performance.
+											
+										
+
+										</p>
+									</div>
+									<p>Graduate Research Assistant(s): <a href="./people.html#myuh">Madeleine Yuh</a>, <a href="./people.html#hunte168">Jake Hunter</a>, <a href="./people.html#sjeevana">Sibibalan Jeevanandam</a>, and <a href="./people.html#mwielatz">Margaret Wielatz</a>.</p>
+									
+									<p>Open Source Code for Experimental Platforms: </p>
+									<ul type="1" styles = "list-style-type: none">
+										<li><a href="https://github.com/Jain-Research-Lab/obstacle-avoidance-platform">Obstacle Avoidance Platform</a></li>
+		
+									</ul>
+
+									<p>Research Poster(s): </p>
+									<ul type="1" style = "list-style-type: none">
+										<li><a href = "./posters/Sibi_IAC_2025_v2.pdf">&#9658;Do You Trust It? A Set-Based Approach to Estimating Human Trust and Risk Perception During Automated Driving</a> (IAC 2025)</li>
+										<li><a href = "./posters/IAC_Maggie_Final.pdf">&#9658;Designing a Human Autonomy Teaming Platform to Research the Effect of Communication on Team Performance</a> (IAC 2025)</li>
+										<li><a href="./posters/IAC2024/IAC_Jake_Final.pdf">&#9658;Assessing the Relationship Between Learning Stages and Prefrontal Cortex Activation in a Psychomotor Task</a> (IAC 2024)</li>
+										<li><a href="./posters/IAC2024/IAC_Madi_Final.pdf">&#9658;Online Self-Confidence Calibration for Improving Learning Outcomes via Intelligent Tutoring Systems</a> (IAC 2024)</li>
+										<li><a href="./posters/IAC2024/IAC_Sibi_v4.pdf">&#9658;Grey-box Modeling of Human Cognitive State Dynamics in Automated Driving Contexts</a> (IAC 2024)</li>
+										<li><a href="./posters/HFES2024/Williamson_Tabango_HFES_2024_FINAL.pdf">&#9658;Dynamic Area of Interest (AOI) Matching in Simulated	Environments via a Direct Coordinate Transform Approach</a> (HFES 2024)</li>
+										<li><a href="./posters/IAC2022/Yuh_Madeleine_Poster2022.pdf">&#9658;A Heuristic Strategy for Cognitive State based Feedback Control to Accelerate Human Learning</a> (IAC 2022)</li>
+										<li><a href="./posters/IAC2022/Ruan_Jianqi_Poster2022.pdf">&#9658;Determining Optimal Decision-Making Sequence for Castrip® Startup Process</a> (IAC 2022)</li>
+										<li><a href="./posters/IAC2021/Yuh_Madeleine_Poster2021.pdf">&#9658;A Computational Model of Coupled Human Trust and Self-Confidence Dynamics</a> (IAC 2021)</li>
+										<li><a href="./posters/IAC2021/Ruan_Jianqi_Poster2021.pdf">&#9658;Determining Optimal Decision Making Sequence for Castrip® Startup Process</a> (IAC 2021)</li>
+										<li><a href="./posters/IAC2019/Akash_Kumar_Poster2019.pdf">&#9658;Reimagining Human Machine Interactions Through Trust Based Feedback</a> (IAC 2019)</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					<hr/>
+					</div>
+					
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<h3>Dynamic Modeling, Design, and Control for Improved (Thermal) Energy Management </h3>
+								<div class="clearfix">
+									<div class="container col-md-4 float-md-end mb-2 mt-2 ms-0 me-0">
+										<figure>
+											<img src="./images/researchlab.jpg" class="img-fluid">
+											<figcaption><div align="center">PEM fuel cell micro-CHP testbed</div></figcaption>
+											<br>
+											<img src="./images/citmav-testbed_board.jpg" class="img-fluid">
+											<figcaption><div align="center">1/10th scale aircraft thermal management system testbed</div></figcaption>
+										</figure>
+									</div>
+									<div align="justify">
+										<p>
+											A research emphasis in the Jain Research Lab is on design and control of thermal energy 
+											systems, defined here very broadly to include any system in which thermal energy plays 
+											a key role in the operation of the system.  We have ongoing projects that focus both on 
+											system level dynamics as well as those of individual thermal-fluidic components, such as 
+											heat exchangers embedded with phase change materials (PCMs). The latter is a collaboration 
+											with researchers outside Purdue to model how PCMs integrated into heat exchangers can 
+											ultimately be used to improve the dynamic response of safety-critical cooling systems.
+											At the systems level, we are developing new algorithms for control co-design that consider 
+											the differing model fidelity needed for design optimization versus control synthesis, 
+											especially for thermodynamic systems with stringent performance requirements. 
+											We are also designing advanced control strategies for micro-combined heat and power 
+											(micro-CHP) systems aimed at increasing the robustness and efficiency of our domestic 
+											electricity supply. Finally, we are tackling improved performance and efficiency of 
+											residential cooling and heating systems through the integration and management of 
+											thermo-chemical energy storage.
+										</p>
+									</div>
+									<p>Graduate Research Assistant(s): <a href="./people.html#dgulewic">Demetrius Gulewicz</a>, <a href="./people.html#jbronisz">Joseph Broniszewski</a>, <a href="./people.html#mathury">Yash Mathur</a>, <a href="./people.html#vvyas">Vismay Vyas</a>, and <a href="./people.html#ibayad">Isha Bayad</a>. </p>
+									<!-- <p>Postdoctoral Researcher(s):  <a href="./people.html#uinyangu">Dr. Uduak Inyang-Udoh</a> and <a href="./people.html#bird6">Dr. Trevor Bird</a></p> -->
+									
+									<p>Open Source Code: </p>
+									<ul type="1" styles = "list-style-type: none">
+										<li><a href="https://github.com/Jain-Research-Lab/Dynamic-PEMFC-micro-CHP-Model-with-Sensible-TES">Dynamic Modeling and Validation of a Micro-Combined Heat and Power System with Integrated Thermal Energy Storage</a></li>
+										<li><a href="https://github.com/Jain-Research-Lab/Dynamic-Water-to-TES-HX-Model">Dynamic Water-Thermal Energy Storage Flatplate Heat Exchanger Model</a></li>
+										<li><a href="https://github.com/Jain-Research-Lab/Model_Predictive_Control_Hybrid_Thermal_Management">Nonlinear Model Predictive Control of a Hybrid Thermal Management System</a></li>
+									</ul>
+									
+									<p>Research Poster(s): </p>
+									<ul type="1" style = "list-style-type: none">
+										<li><a href = "./posters/ICON_StudentConference_JosephBroniszewski_Poster.pdf">&#9658;Optimal Sensor Placement for State of Charge Estimation in Thermal Energy Storage Device</a> (ICON SRC 2026)</li>
+										<li><a href = "./posters/Demetrius_Poster_IAC_v1.pdf">&#9658;Robust Modeling of A Multi-Functional Cold Climate Heat Pump System</a> (IAC 2025)</li>
+										<li><a href = "./posters/Gulewicz_MECC_2024.pdf">&#9658;Nonlinear Model Predictive Control of a Latent Thermal Energy Storage Device for Electronics Cooling Applications</a> (MECC 2024)</li>
+										<li><a href = "./posters/IAC2024/IAC_MECC_Pandu_Final_2.pdf">&#9658;Battery Electric Vehicle Thermal Management System Graph-Based Modeling</a> (IAC 2024)</li>
+										<li><a href = "./posters/ITherm2024/ITHERM2024_Paper132_T2_Gulewicz_Demetrius.pdf">&#9658;Closed-Loop Analysis of Thermal Energy Storage Device Arrangement in a Thermal Management System</a> (ITherm 2024)</li>
+										<li><a href="./posters/ITherm2023/Mandali_Shanks_Jain_ITherm2023_Poster.pdf">&#9658;Control Co-Design of a Thermal Management System with Integrated Latent Thermal Energy Storage and a Logic-based Controller</a> (ITherm 2023)</li>
+										<li><a href="./posters/GRC2023/Shanks_GRC_Poster_v2.pdf">&#9658;Real-Time Control of a Transient Thermal Management System with Integrated Latent Thermal Energy Storage</a> (GRC 2023)</li>
+										<li><a href="./posters/GRC2023/Bird_Trevor_Poster_GRC23_v3.pdf">&#9658;Transient Design Optimization of Hybrid thermal Management Systems</a> (GRC 2023)</li>
+										<li><a href="./posters/IAC2022/Shanks_⁮Michael_Poster2022.pdf">&#9658;Logic-Based Control of a hybrid Thermal Management System</a> (IAC 2022)</li>
+										<li><a href="./posters/IAC2021/Shanks_⁮Michael_Poster2021.pdf">&#9658;Optimal Design of a Phase-Change Thermal Energy Storage Device</a> (IAC 2021)</li>
+										<li><a href="./posters/IAC2021/Bird_Trevor_Poster2021.pdf">&#9658;Hybrid Zonotopes: A Mixed Integer Set Representation for Analysis of Hybrid Systems</a> (IAC 2021)</li>
+										<li><a href="./posters/IAC2019/Nash_Austin_Poster2019.pdf">&#9658;Hierarchical Control Co-Design (CCD) for Thermal-Fluid Systems</a> (IAC 2019)</li>
+										<li><a href="./posters/IAC2019/Bird_Trevor_Poster2019.pdf">&#9658;Dynamic Modeling, Control, and Optimization of Micro-CHP Systems</a> (IAC 2019)</li>
+										<li><a href="./posters/IAC2019/Gohil_Karan_Poster2019.pdf">&#9658;Reduced Order Modeling Of Thermal Energy Storage Modules</a> (IAC 2019)</li>
+									</ul>
+									
+								</div>
+							</div>
+						</div>
+					<hr/>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+		<div class="container padding-bottom-30 padding-top-15">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div class="row padding-bottom-30">
+						<h1 id="past_projects">Past Projects</h1>
+						<hr/>
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="row">
+								<h3>Iterative Learning Control for Time-Delayed Systems</h3>
+								<div class="clearfix">
+									<div class="container col-md-4 float-md-start mb-2 mt-2 ms-0 me-0">
+										<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/dz-_BuCYScw?rel=0" allowfullscreen width="100%"></iframe>
+									</div>
+									<div align="justify">
+										<p>
+											Our interests in controlling energy-intensive systems has led to research 
+											that addresses, in part, new algorithms and tools for controlling time-delayed 
+											systems. Twin-roll steel strip casting produces steel strips by pouring steel 
+											directly onto rollers and compressing it to a thickness near the final gauge, 
+											whereas traditional casting uses a mold to form a steel slab that is later rolled 
+											to the desired thickness. The twin roller method is 9 times more energy efficient 
+											and 7000 times faster(!) than thick slab casting. However, achieving precise 
+											physical properties along the length of the strip poses a challenging engineering 
+											problem due to the highly coupled nature of the thermal and mechanical dynamics.  
+											We developed a new algorithm, based on iterative learning control, which can 
+											compensate for time delays that are longer than a single iteration of the casting 
+											process.  We were recently awarded a patent with an industry partner for our 
+											algorithm, and continue to tackle exciting controls challenges in this advanced 
+											manufacturing process.
+										</p>
+									</div>
+									<p>Recent Research Poster(s): <a href="./posters/IAC2019/Browne_Rian_Poster2019.pdf">&#9658;Iterative Learning Control for Time-Delayed and Time-Varying Systems</a> (IAC 2019)</p>
+								</div>
+							</div>
+							<hr/>
+							<div class="row">
+								<h3>Dynamic Modeling and Control in Advanced Transportation Systems</h3>
+								<div class="clearfix">
+									<div class="container col-md-4 float-md-end mb-2 mt-2 ms-0 me-0">
+										<figure>
+											<img src="./images/semi-research.JPG" class="img-fluid">
+											<figcaption><div align="center">Purdue-owned Class 8 trucks for platooning research</div></figcaption>
+										</figure>
+									</div>
+									<div align="justify">
+										<p>More recently we have started investigating the role of advanced control and autonomy in future transportation systems.  Through collaborations with other faculty here at Purdue and industry partners, we are designing new algorithms for platooning of heavy duty Class 8 trucks.  We are also tackling large-scale modeling of the freight transportation network by considering it as a system of systems, to answer questions like “what incentives and policies, deployed over time in what way, will lead to a significant increase in the adoption of battery electric trucks?”
+										<p>Research Poster(s): <a href="./posters/IAC2019/Guerrero_Ana_Poster2019.pdf">&#9658;Powering What’s Next in Freight Transportation</a> (IAC 2019)</p>
+									</div>
+								</div>
+							</div>
+						</div>						
+						<hr/>
+					</div>
+				</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<!-- footer top -->
+			<div class="footer-top bg-shark">
+				<div class="container padding-top-30">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="holder">
+							<img src="./images/Eng-White.png" style="width:200px;height:auto;" class="mx-auto d-block">
+							<hr/>
+								<div align="center">
+								<p>Copyright © 2015-2023 JAIN Research Lab - All Rights Reserved</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!-- include JavaScript Plugins -->
+	<script type="text/javascript" src="js/plugins.js"></script>
+	
+	<script src="js/jquery.backstretch.js"></script>
+	<script>
+        $("#shifting").backstretch([
+          "./images/city_bg2.jpg",
+          "./images/steel-jain.jpg",
+          "./images/science-thoughts.jpg"
+        ], {
+            fade: 750,
+            duration: 5000
+        });	
+    	</script>
+	
+	<!-- Bootstrap 5.0 js -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	
+</body>
+</html>

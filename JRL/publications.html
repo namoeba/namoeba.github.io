@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the title of your site -->
+	<title>Jain Research Lab at Purdue University</title>
+	<!-- ========= Favicon Icons ========= -->
+	<link rel="shortcut icon" href="#">
+
+	<!-- include Google fonts  -->
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic%7CPlayfair+Display:400,400italic,700,700italic,900,900italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900%7CRaleway:400,100,200,300,500,600,700,800,900%7CGreat+Vibes%7CPoppins:400,300,500,600,700' rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet of bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the font awesome stylesheet  -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22055f2d30.js" crossorigin="anonymous"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<!-- include the stylesheets of headers and footer of the page  -->
+	<link rel="stylesheet" type="text/css" href="css/page-assets.css">
+	<!-- include the helping elements stylesheets of  the page  -->
+	<link rel="stylesheet" type="text/css" href="css/helper-elements.css">
+	<!-- include the site stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- include the site color stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="css/color/color.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <!-- Include bootstrap 5 -->
+    <link rel=”stylesheet” href="css/bootstrap.min.css">
+
+	
+<style>
+	h1, h2, h3, h4 {
+	color: #2e7272;
+	text-transform:uppercase;
+	}
+
+	#theImage {
+		width: auto;
+		height: auto;
+	}
+
+	#container {
+		<!--width: auto;-->
+		height: 90px;
+		margin: 0 auto;
+	}
+	.responsive {
+		max-width: 100%;
+		height: auto;
+	}
+
+	a { 
+		text-decoration: none; 
+	}
+
+	.carousel-control-next-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-control-prev-icon {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+	}
+
+	.carousel-indicators [data-bs-target] {
+		box-sizing: content-box;
+		flex: 0 1 auto;
+		width: 30px;
+		height: 3px;
+		padding: 0;
+		margin-right: 3px;
+		margin-left: 3px;
+		text-indent: -999px;
+		cursor: pointer;
+		background-color: black;
+		background-clip: padding-box;
+		border: 0;
+		border-top: 10px solid transparent;
+		border-bottom: 10px solid transparent;
+		opacity: 0.5;
+		transition: opacity 0.6s ease;
+	}	
+	
+	.carousel-indicators .active{background-color: grey !important;}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90541437-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+<body>
+
+	<!-- contain main informative part of the site -->
+	<main id="main" role="main">
+		<!-- page banner -->
+		<header class="page-banner small grey" id="shifting">
+			<div class="container">
+                <div class="row align-items-start">
+				<div class="col-sm-5">
+                    <a href="./"><img src="images/jainlogo2.png" width="100%"></a>
+                </div>
+                <div class="col">
+                    <nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center">
+                        <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"></li><a class="nav-link h6" href="./">HOME</a></li>
+							<li class="nav-item"></li><a class="nav-link h6" href="./about.html">ABOUT</a></li>
+                            <li class="nav-item h6 dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">NEWS</a>
+                                <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./news/CurrentYear.html">CURRENT YEAR</a></li>
+								<li><a class="dropdown-item" href="./news/2024.html">2024</a></li>
+								<li><a class="dropdown-item" href="./news/2023.html">2023</a></li>
+								<li><a class="dropdown-item" href="./news/2022.html">2022</a></li>
+                                <li><a class="dropdown-item" href="./news/2021.html">2021</a></li>
+                                <li><a class="dropdown-item" href="./news/2020.html">2020</a></li>
+                                <li><a class="dropdown-item" href="./news/2019.html">2019</a></li>
+                                <li><a class="dropdown-item" href="./news/2018.html">2018</a></li>
+                                <li><a class="dropdown-item" href="./news/2017.html">2017</a></li>
+                                <li><a class="dropdown-item" href="./news/2016.html">2016</a></li>
+                                <li><a class="dropdown-item" href="./news/2015.html">2015</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./research.html">RESEARCH</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./people.html">PEOPLE</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6 active" href="#">PUBLICATIONS</a></li>
+							<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./github.html">GITHUB</a></li>
+                            <li class="nav-item" style="color:#FFF;"><a class="nav-link h6" href="./contact.html">CONTACT</a></li>
+                        </ul>
+                        </div>
+                    </nav>
+                </div> 
+                </div>
+				</div>
+			</div>
+
+		</header>
+
+		<div class="container padding-bottom-30 padding-top-30">
+			<div class="row">
+				<div class="col-sm-1"></div>
+				<div class="col-sm-10">
+					<div class="row">
+						<h1>Publications</h1>
+						<p>&emsp;Visit our lab on <a href="https://www.researchgate.net/lab/Jain-Research-Lab-Neera-Jain">ResearchGate</a> to request a private copy of any of our manuscripts</p>
+					</div>
+					<div class="row">
+				
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./publications.html#book">&#9658;Books</a> </h3>
+						</div>
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./publications.html#theses">&#9658;Theses</a></h3>
+						</div>
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./publications.html#journal">&#9658;Journals</a></h3>
+						</div>
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px">  <a href="./publications.html#conference">&#9658;Conferences</a></h3>
+						</div>
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./publications.html#talks">&#9658;Talks</a></h3>
+						</div>
+						<div class="col-md-2">
+							<h3 style = "text-align: center; font-size:18px"> <a href="./publications.html#patents">&#9658;Patents</a></h3>
+						</div>
+						
+					</div>
+					<div class="row">
+						<div class="col-xs-10 col-lg-12">
+						<h3 id="book">Book and Book Chapters</h3> 
+						<ol type="1" style="padding-left: 2.0em">
+							<li>A. Alleyne, V. Chandan, <b> N. Jain</b>, B. Li, R. Otten, "Modeling and Control of Air Conditioning and Refrigeration Systems." <em>The Control Handbook</em>, 2nd Edition, William Levine (ed.), CRC Press Inc., Salem, MA, 2010.</li>
+							<li><b>N. Jain</b>, T. Reid, K. Akash, M. Yuh, and J. Hunter, “Enabling Human-Aware Autonomy Through Cognitive Modeling and Feedback Control,” in <em>Cyber–Physical–Human Systems: Fundamentals and Applications</em>. A. M. Annaswamy, P. P. Khargonekar, F. Lamnabhi-Lagarrigue, and S. K. Spurgeon, Eds. Hoboken, NJ, USA; John Wiley & Sons, Inc. 2023, ch. 5, pp 95-124.</li>
+						</ol>
+							
+						<h3 id="theses">Theses </h3>
+						<ol type="1" style="padding-left: 2.0em" >
+							<li>J.G. Hunter, <a href="https://hammer.purdue.edu/ndownloader/files/58813888">"Objective Design Fixation Analysis as a Basis for AI-Designer Teaming in Constrained Design."</a> Ph.D Dissertation, <em>Purdue University</em>, 2025.</li>
+							<li>A. Bolander, <a href="https://hammer.purdue.edu/ndownloader/files/47813317"> "An Entropy-based Approach to Enumerated Graph-based Aircraft TMS Optimization."</a> M.S. Thesis, <em>Purdue University</em>, 2024.
+							<li>E. Rabb, <a href="https://hammer.purdue.edu/ndownloader/files/45809322"> "Modeling and Calibration of Risk Perception and Self-Confidence during Human Execution of a Psychomotor Task."</a> M.S. Thesis, <em>Purdue University</em>, 2024.
+							<li>J. Ruan, <a href="https://hammer.purdue.edu/ndownloader/files/44805907"> "Reinforcement Learning-based Human Operator Decision Support Agent for Highly Transient Industrial Processes."</a> Ph.D. Dissertation, <em>Purdue University</em>, 2024.
+							<li>M.S. Konishi, <a href="https://hammer.purdue.edu/ndownloader/files/39547060"> "Inferring Takeover and Trust in SAE Level 2 Automated Vehicles."</a> M.S. Thesis, <em>Purdue University</em>, 2022.
+							<li>M.A. Shanks, <a href="https://hammer.purdue.edu/ndownloader/files/38432111">"Design, Control, and Validation of a Transient Thermal Management System with Integrated Phase-Change Thermal Energy Storage."</a> M.S. Thesis,<em> Purdue University</em>, 2022.
+							<li>T.J. Bird, <a href="https://engineering.purdue.edu/JainResearchLab/pdf/PhD_Trevor_Bird_2022.pdf"> "Hybrid Zonotopes: A Mixed-Integer Set Representation for the Analysis of Hybrid Systems."</a> Ph.D Dissertation, <em>Purdue University</em>, 2022.
+							<li>M. Glebocki, <a href="https://hammer.purdue.edu/ndownloader/files/36391947">"An Exergetic Approach to Aircraft Thermal Management System Analysis and Design Optimization."</a> M.S. Thesis,<em> Purdue University</em>, 2022.
+							<li>K. Williams, <a href="https://hammer.purdue.edu/articles/thesis/Cognitive_Modeling_for_Human-Automation_Interaction_A_Computational_Model_of_Human_Trust_and_Self-Confidence/16736689">"Cognitive Modeling for Human-Automation Interaction: A Computational Model of Human Trust and Self-confidence."</a> M.S. Thesis,<em> Purdue University</em>, 2021.
+							<li>F. Browne, <a href="https://hammer.purdue.edu/articles/thesis/Robust_Iterative_Learning_Control_for_Linear_Parameter-Varying_Systems_with_Time_Delays/12743579">"Robust Iterative Learning Control for Linear Parameter Systems with Time Delay.</a>" Ph.D. Disseration,<em> Purdue University</em>, 2020.
+							<li>K. Akash, <a href="https://hammer.figshare.com/articles/Reimagining_Human-Machine_Interactions_through_Trust-Based_Feedback/12493007">"Reimagining Human-Machine Interactions through Trust-Based Feedback."</a> Ph.D. Dissertation,<em> Purdue University</em>, 2020.
+							<li>K. Gohil, <a href="https://hammer.purdue.edu/articles/thesis/REDUCED-ORDER_MODELING_AND_DESIGN_OPTIMIZATION_OF_METAL-PCM_COMPOSITE_HEAT_EXCHANGERS/12264878">"Reduced-Order Modeling and Design Optimization of Metal-PCM Composite Heat Exchangers."</a> M.S. Thesis,<em> Purdue University</em>, 2020.
+							<li>A. Nash, <a href="https://hammer.purdue.edu/articles/thesis/Hierarchical_Combined_Plant_and_Control_Design_for_Thermal_Management_Systems/11312195">"Hierarchical Combined Plant and Control Design for Thermal Management Systems."</a> Ph.D. Dissertation,<em> Purdue University</em>, 2020.
+							<li>A. Guerrero de la Peña, <a href= " https://hammer.purdue.edu/articles/thesis/Development_of_a_framework_for_projecting_line-haul_truck_technology_adoption_and_greenhouse_gas_emissions_in_the_U_S_using_a_System-of-Systems_methodology/11923557"> "Development of a Framework for Projecting Line-Haul Truck Technology Adoption and Greenhouse Gas Emissions in the U.S. using a System-of-Systems Methodology."</a> Ph.D. Dissertation,<em> Purdue University</em>, 2020.
+							<li>A. Tam, <a href="https://docs.lib.purdue.edu/dissertations/AAI10844673/">"Optimal Design and Control of Residential Airconditioning Equipment With Integrated Thermal Storage."</a> M.S. Thesis,<em> Purdue University</em>, 2018.
+							<li>Y. Menghmalani, <a href="https://docs.lib.purdue.edu/dissertations/AAI10637791/">"Dynamic Modeling and Validation of Power Generators."</a> M.S. Thesis,<em> Purdue University</em>, 2017.
+						</ol>
+						
+						<h3 id="journal">Journal Publications </h3>
+						<ol type="1" style="padding-left: 2.0em" >
+							<li>Bayad, I. and <b>Jain</b>, N., “Pressure- and temperature-dependent dynamic model of a barocaloric phase change material thermal energy storage device.” <em>Intl. Journal of Heat and Mass Transfer</em> May 2026;</li>
+							<li>Hunter, J. G., Schonlau, S. L., <b>Jain</b>, N., and Reid, T., <a href = https://doi.org/10.1115/1.4071923>“A Methodology for Objective Design Fixation Analysis in Constrained Design Tools.”</a> <em>ASME. J. Mech. Des.</em> November 2026; 148(11): 111401. doi:10.1115/1.4071923.</li>
+							<li>S. Jeevanandam, M. Williamson Tabango, X. Wang, and <b>N. Jain</b>, <a href = https://www.sciencedirect.com/science/article/pii/S1369847825004243>“Multi-factor cognitive analysis of human interaction with a conditionally automated vehicle,”</a> <em>Transportation Research Part F: Traffic Psychology and Behaviour</em>, vol. 117, p. 103469, Feb. 2026, doi: 10.1016/j.trf.2025.103469.</li>
+							<li>A. Bolander, T. J. Bird, R. Manion, M. Glebocki, K. McCarthy and <b>N. Jain</b>,<a href="https://ieeexplore.ieee.org/abstract/document/11097353">"A Second Law Approach to Dynamic Optimization of Enumerated Aircraft Thermal Management System Architectures,"</a> in <em>IEEE Transactions on Transportation Electrification</em>, vol. 11, no. 5, pp. 12657-12666, Oct. 2025, doi: 10.1109/TTE.2025.3593116.</li>
+							<li>Gulewicz, D., Bird, T. J., Pangborn, H. C., and <b>Jain, N.</b> (March 12, 2025). <a href = https://doi.org/10.1115/1.4067895>"Set-Based Robust Control Co-Design: Application to a Hybrid Thermal Management System."</a> <em>ASME. Letters Dyn. Sys. Control.</em> July 2025, doi:10.1115/1.4067895.</li>
+							<li>D. Gulewicz, U. Inyang-Udoh, T. Bird and <b>N. Jain</b>, <a href = https://ieeexplore.ieee.org/document/11319184>"Nonlinear Model Predictive Control of a Hybrid Thermal Management System,"</a> in <em>IEEE Transactions on Control Systems Technology</em>, doi: 10.1109/TCST.2025.3646704.
+							<li>J. Ruan, B. Nooning, I. Parkes, W. Blejde, G. Chiu, and <b>N. Jain</b>, <a href = https://link.springer.com/article/10.1007/s10845-023-02295-x>“Human operator decision support for highly transient industrial processes: a reinforcement learning approach,”</a> <em>Journal of Intelligent Manufacturing</em>, Jan. 2024, doi: 10.1007/s10845-023-02295-x. </li>
+							<li>M. S. Yuh, K. R. Ortiz, K. Sommer-Kohrt, M. Oishi and <b>N. Jain</b>, <a href = "https://ieeexplore.ieee.org/abstract/document/10378711">“Classification of Human Learning Stages via Kernel Distribution Embeddings,”</a> IEEE Open Journal of Control Systems, pp. 1-16, January 2024,  doi: 10.1109/OJCSYS.2023.3348704.</li>
+							<li>J. Hunter, E. Ulwelling, M. Konishi, N. Michelini, A. Modali, A. Mendoza, S. Mehrotra, Z. Zheng, A. Kumar, K. Akash, T. Misu, <b>N. Jain</b>, and T. Reid, <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1129583/full">“The Future of Mobility-as-a-Service: Trust Transfer Across Automated Mobilities, From Road to Sidewalk.”</a> Frontiers in Psychology, vol. 14, May 2023, doi: 10.3389/fpsyg.2023.1129583.</li>
+							<li>M. Shanks, U. Inyang-Udoh, and <b>N. Jain</b>, <a href= "https://asmedigitalcollection.asme.org/dynamicsystems/article/145/9/091002/1163811/Design-and-Validation-of-a-State-Dependent-Riccati"> “Design and validation of a state-dependent Riccati equation filter for state of charge estimation in a latent thermal storage device.”</a> Journal of Dynamic Systems, Measurement, and Control, vol. 145, no. 9, July 2023, doi: 10.1115/1.4062707.</li>
+							<li>K. J. Williams, M. S. Yuh, and <b>N. Jain</b>, <a href="https://dl.acm.org/doi/abs/10.1145/3594715">"A Computational Model of Coupled Human Trust and Self-Confidence Dynamics",</a> ACM Transactions on Human-Robot Interaction, vol. 12, no. 3, pp.1-29, June 2023, doi: 10.1145/3594715.</li>
+							<li>T. J. Bird, H. C. Pangborn, <b>N. Jain</b>, and J. P. Koeln, <a href="https://www.sciencedirect.com/science/article/pii/S0005109823002674">“Hybrid zonotopes: a new set representation for reachability analysis of mixed logical dynamical systems.”</a> Automatica, vol. 154, August 2023, doi: 10.1016/j.automatica.2023.111107.</li>
+							<li>J. A. Siefert, T. J. Bird, J. P. Koeln, <b>N. Jain</b>, and H. Pangborn, <a href="https://ieeexplore.ieee.org/document/9815835">"Robust Successor and Precursor Sets of Hybrid Systems Using Hybrid Zonotopes,"</a> <em>IEEE Control Systems Letters</em>, vol. 7, pp. 355-360, 2023, doi: 10.1109/LCSYS.2022.3188477. </li>
+							<li>P. Krane, A. Nash, D. Ziviani, J. E. Braun, A. Marconnet, and <b>N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0306261922011059">“Dynamic Modeling and Control of a Two-Reactor Metal Hydride Energy Storage System,”</a> <em>Applied Energy</em>, vol. 325, Nov. 2022, doi: 10.1016/j.apenergy.2022.119836.</li>
+							<li>M. Shanks, C. M. Shoalmire, M. Deckard, K. N. Gohil, H. Lewis II, D. Lin, P. J. Shamberger, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0306261922003786?via%3Dihub">"Design of Spatial Variability in Thermal Energy Storage Modules for Enhanced Power Density"</a> in <em>Applied Energy</em>, vol. 314, pp. 118966, May 2022, doi: 10.1016/j.apenergy.2022.118966. </li>
+							<li>T. J. Bird and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9638970">"Unions and Complements of Hybrid Zonotopes"</a> in <em>IEEE Control Systems Letters</em>, vol. 6, pp. 1778-1783, 2022, doi: 10.1109/LCSYS.2021.3133126.</li>
+							<li>P. Krane, D. Ziviani, J. E. Braun, <b>N. Jain</b>, and A. Marconnet, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778821009841?via%3Dihub">“Techno-Economic Analysis of Metal-Hydride Energy Storage to Enable Year-Round Load-Shifting for Residential Heat Pumps,”</a> <em>Energy and Buildings</em>, vol. 256, Feb. 2022, doi: 10.1016/j.enbuild.2021.111700.</li>
+							<li>M. Droege, B. Black, S. Ashta, J. Foster, G. Shaver, <b>N. Jain</b>, and R. Thayer, <a href="https://journals.sagepub.com/doi/10.1177/09544070211067681">“Heavy-duty truck platooning on hilly terrain highways: methods for assessment and improvement,”</a> <em>Proc. of the Institution of Mechanical Engineers, Part D: Journal of Automobile Engineering</em>, vol. 235, no. 13, pp. 2850-2864, 2022, doi: 10.1177/09544070211067681. </li>
+							<li>A.L. Nash and <b> N. Jain</b>, <a href="https://asmedigitalcollection.asme.org/mechanicaldesign/article-abstract/143/1/011708/1084965">"Hierarchical Control Co-design Using a Model Fidelity-Based Decomposition Framework"</a> <em>Journal of Mechanical Design</em>, vol. 143, no. 1, pp. 011708, Jan. 2021, doi: 10.1115/1.4047691</li>
+							<li>F. Browne, B. Rees, G.T.-C. Chiu, <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9001173">"Iterative Learning Control with Time Delay Compensation: An Application to Twin Roll Strip Casting.”</a> <em>IEEE Trans. Control Systems Technology</em>, vol. 29, no.1, pp. 140-149, Jan. 2021, doi: 10.1109/TCST.2020.2971452</li>
+							<li>K. Akash, G. McMahon, T. Reid, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9258446">"Human Trust-based Feedback Control: Dynamically varying automation transparency to optimize human-machine interactions."</a> <em>IEEE Control Systems Magazine</em>, vol. 40, no. 6, pp. 98-116, Dec. 2020, doi: 10.1109/MCS.2020.3019151</li>
+							<li>A. Nash and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/8795566">"Combined Plant and Control Co-design for Robust Disturbance Rejection in Thermal-Fluid Systems."</a> <em>IEEE Trans. Control Systems Technology</em>, vol. 28, no. 6, pp. 2532-2539, Nov. 2020, doi: 10.1109/TCST.2019.2931493</li>
+							<li>T. J. Bird and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/abs/pii/S0306261920304670">"Dynamic Modeling and Validation of a Micro-combined Heat and Power System with Integrated Thermal Energy Storage"</a> <em> Applied Energy</em>, vol. 271, pp. 114955, Aug. 2020, doi:10.1016/j.apenergy.2020.114955 </li>
+							<li>A. Guerrero de la Peña, N. Davendralingam, A. K. Raz, D. DeLaurentis, G. Shaver, V. Sujan, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S1361920920305411">"Projecting Adoption of Truck Powertrain Technologies and CO2 Emissions in Line-Haul Networks."</a> <em>Transportation Research Part D: Transport and Environment</em>, vol. 84, pp. 102354, July 2020, doi:10.1016/j.trd.2020.102354 </li>
+							<li>A. Tam, D. Ziviani, J. E. Braun, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0378778818333759?via%3Dihub">"Development and Evaluation of a Generalized Rule-Based Control Strategy for Residential Ice Storage Systems."</a> <em>Energy and Buildings</em>, vol. 197, pp. 99-111, Aug. 2019, doi: 10.1016/j.enbuild.2019.05.040</li>
+							<li>A. Nash, B. Fu, T. Bird, <b> N. Jain</b>, and T. Fisher, <a href="https://arc.aiaa.org/doi/full/10.2514/1.T5604">"Control-Oriented Modeling of Integrated Flash Boiling for Rapid Transient Heat Dissipation"</a> <em>Journal of Thermophysics and Heat Transfer</em>, vol. 33, no. 3, pp. 817-829, Jul-Sep. 2019, doi: 10.2514/1.T5604</li>
+							<li>F. Browne, G. Chiu, <b> N. Jain</b>, <a href="http://dynamicsystems.asmedigitalcollection.asme.org/article.aspx?articleid=2726799">"A Nonlinear Dynamic Switched-Mode Model of Twin-Roll Steel Strip Casting."</a> <em>Journal of Dynamic Systems, Measurement, and Control</em>, vol. 141, no. 8, pp. 081004, Aug. 2019, doi: 10.1115/1.40429522019</li>
+							<li>A. Guerrero de la Peña, N. Davendralingam, A. Raz, G. Shaver, D. DeLaurentis, V. Sujan, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S1366554518306653">"Projecting Line-Haul Truck Technology Adoption: How Heterogeneity Among Fleets Impacts System-Wide Adoption."</a> <em>Transportation Research Part E: Logistics and Transportation Review</em>, vol. 124, pp. 108-127, Apr. 2019, doi:10.1016/j.tre.2018.12.017</li>
+							<li>W. Hu, K. Akash, T. Reid, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/8502860">"Computational Modeling of the Dynamics of Human Trust During Human-Machine Interactions"</a> <em>IEEE Trans. Human-Machine Systems</em>, vol. 49, no. 6, pp. 485-497, Dec. 2019, doi: 10.1109/THMS.2018.2874188</li>
+							<li>K. Akash, W. Hu, <b> N. Jain</b>, and T. Reid, <a href="https://dl.acm.org/authorize?N675055">"A Classification Model for Sensing Human Trust in Machines Using EEG and GSR."</a> <em>ACM Transactions on Interactive Intelligent Systems</em>, vol. 8, no. 4, pp. 1-20, Nov. 2018, doi: 10.1145/3132743</li>
+							<li>A. Nash, A. Badithela, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S0306261917303343">"Dynamic Modeling of a Sensible Thermal Energy Storage Tank with an Immersed Coil Heat Exchanger under Three Operation Modes."</a> <em>Applied Energy</em>, vol. 195, pp. 877-889, June 2017, doi: 10.1016/j.apenergy.2017.03.092.</li>
+							<li><b>N. Jain </b> and A. Alleyne, <a href="https://www.sciencedirect.com/science/article/pii/S0196890414010437">"Exergy-Based Optimal Control of a Vapor Compression System."</a> <em>Energy Conversion and Management</em>, vol. 92, pp. 353-365, Mar. 2015, doi: 10.1016/j.enconman.2014.12.014.</li>
+							<li>A. Alleyne and <b> N. Jain</b>, <a href="https://memagazineselect.asmedigitalcollection.asme.org/article.aspx?articleID=2678850">"Transient Thermal Systems: Dynamics and Control"</a> <em>Mechanical Engineering</em>, vol. 136, no. 3, pp. S4-S12, Mar. 2014, doi: 10.1115/1.2014-Mar-4.</li>
+							<li><b>N. Jain</b>, J. P. Koeln, S. Sundaram and A. Alleyne, <a href="https://www.sciencedirect.com/science/article/pii/S0959152414000432">"Partially-Decentralized Control of Large-Scale Variable-Refrigerant-Flow Systems in Buildings."</a> <em>Journal of Process Control</em>, vol. 24, no. 6, pp. 798-819, June 2014, doi: 10.1016/j.jprocont.2014.02.001.</li>
+							<li><b>N. Jain </b> and A. Alleyne, <a href="https://www.sciencedirect.com/science/article/pii/S1359431112002347">"A Framework for the Optimization of Integrated Energy Systems."</a> <em>Applied Thermal Engineering</em>, vol. 48, pp. 495-505, Dec. 2012, doi: 10.1016/j.applthermaleng.2012.04.003.</li>
+							<li>B. Li, <b> N. Jain</b>, W. Mohs, S. Munns, V. Patnaik, J. Berge, and A. Alleyne, <a href="https://www.tandfonline.com/doi/abs/10.1080/10789669.2012.670685">"Dynamic Modeling of Refrigerated Transport Systems with Cooling/Heating Mode Switch Operations."</a> <em>HVAC&R Research</em>, vol. 18, no. 5, pp. 974-996, Sep. 2012, doi: 10.1080/10789669.2012.670685.</li>
+							<li><b> N. Jain</b>, B. Li, M. Keir, B. Hencey, and A. Alleyne, <a href="https://ieeexplore.ieee.org/abstract/document/4895680">"Decentralized Feedback Structures of a Vapor Compression Cycle System."</a> <em>IEEE Trans. Control Systems Technology</em>, vol. 18, no. 1, pp. 185-193, Jan. 2010, doi: 10.1109/TCST.2008.2010500.</li>
+						</ol>
+							
+						<h3 id="conference">Conference Publications</h3> 
+						<ol type="1" style="padding-left: 2.0em" >
+							<li>V. Vyas, <b>N. Jain</b>, K. McCarthy, and A. Bolander, <a href = https://arc.aiaa.org/doi/10.2514/6.2026-2460>“Graph-Based Dynamic Modeling of a PAO Loop for Aircraft Thermal Management Systems,”</a> in <em>AIAA SCITECH 2026 Forum</em>, in AIAA SciTech Forum. , American Institute of Aeronautics and Astronautics, 2026. doi: 10.2514/6.2026-2460.</li>
+							<li>S. Jeevanandam and <b>N. Jain</b>, <a href =https://ieeexplore.ieee.org/document/11423829>"A Hybrid Dynamic Model for Predicting Human Cognition and Reliance During Automated Driving,"</a> <em>2025 IEEE 28th International Conference on Intelligent Transportation Systems (ITSC)</em>, Gold Coast, Australia, 2025, pp. 2942-2949, doi: 10.1109/ITSC60802.2025.11423829.</li>
+							<li>M. S. Yuh and <b>N. Jain</b>,<a href="https://ieeexplore.ieee.org/abstract/document/11217643"> "Designing Cognitively-Aware Psychomotor Intelligent Tutoring Systems via Multi-Objective and Human-Centric Optimization,"</a> <em> 2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, Eindhoven, Netherlands, 2025, pp. 35-42, doi: 10.1109/RO-MAN63969.2025.11217643.</li>
+							<li>M. Wielatz, M. Pandya, M. S. Yuh and <b>N. Jain</b>, <a href = https://ieeexplore.ieee.org/document/11217807>"The Role of Dispositional Trust in Adaptive Automation for Trust Calibration,"</a> <em>2025 34th IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)</em>, Eindhoven, Netherlands, 2025, pp. 2495-2502, doi: 10.1109/RO-MAN63969.2025.11217807.</li>
+							<li>M. S. Yuh and <b>N. Jain</b>, <a href = https://journals.sagepub.com/doi/full/10.1177/10711813241260743>"Online Self-Confidence Calibration for Improving Learning Outcomes Via Intelligent Tutoring Systems"</a>, in <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em>, Phoenix, AZ, September 9-13, 2024, doi: 10.1177/10711813241260743.</li>
+							<li>A. Bolander, T. J. Bird, K. McCarthy and <b>N. Jain</b>, <a href="https://ieeexplore.ieee.org/abstract/document/11097353">"Comparison of Entropy and Exergy-based Dynamic Optimization of Air Cycle Machine Architectures,"</a> <em>2025 24th IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (ITherm)</em>, Dallas, TX, USA, 2025, pp. 1-10, doi: 10.1109/ITherm55376.2025.11235709.</li>
+							<li>S. Jeevanandam, M. Williamson Tabango, X. Wang, and <b>N. Jain</b>, <a href = https://journals.sagepub.com/doi/full/10.1177/10711813241261345>"A Novel Experiment Design for Studying Multiple Cognitive Factors in Conditionally Automated Driving Contexts"</a> in <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em>, Phoenix, AZ, September 9-13, 2024, doi: 10.1177/10711813241261345.</li> 
+							<li>K. Ortiz, J. Hunter, A. Thorpe, M. Yuh, T. Reid, <b>N. Jain</b>, and M. Oishi, <a href = https://journals.sagepub.com/doi/10.1177/10711813241260675>“Assessing the Relationship Between Learning Stages and Prefrontal Cortex Activation in a Psychomotor Task,”</a> in <em>Proceedings of the Human Factors and Ergonomics Society Annual Meeting</em>, Phoenix, AZ, September 9-13, 2024, doi: 10.1177/107118132412606.</li>
+							<li>J. Koeln, T. J. Bird, J. Siefert, J. Ruths, H. C. Pangborn, and <b>N. Jain</b>, <a href = https://arxiv.org/abs/2310.15426>“zonoLAB: A MATLAB Toolbox for Set-based Control Systems Analysis Using Hybrid Zonotopes,”</a> in <em>Proceedings of the American Control Conference</em>, Toronto, ON, CANADA, July 10-12, doi: not yet available.</li>
+							<li>T. J. Bird, J. Siefert, H. C. Pangborn, and <b>N. Jain</b>, <a ref = >“A Set-Based Approach for Robust Control Co-Design,”</a> in <em>Proceedings of the American Control Conference</em>, Toronto, ON, CANADA, July 10-12, doi: not yet available.</li>
+							<li>M. Yuh, E. Rabb, A. Thorpe, and <b>N. Jain</b>, <a href = >“Using Reward Shaping to Train Cognitive–based Control Policies for Intelligent Tutoring Systems,”</a> in <em>Proceedings of the American Control Conference</em>, Toronto, ON, CANADA, July 10-12, doi: not yet available.</li>
+							<li>P. P. Dewanatha, D. Gulewicz and <b>N. Jain</b>, <a href = https://ieeexplore.ieee.org/document/10709619>“Closed-loop Analysis of Thermal Energy Storage Device Arrangement in a Thermal Management System,”</a> <em>2024 23rd IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems (ITherm)</em>, Aurora, CO, USA, 2024, pp. 1-10, doi: 10.1109/ITherm55375.2024.10709619.</li>
+							<li>A. Bolander, T. Bird, W. A. Malatesta, K. McCarthy, and <b>N. Jain</b>, <a href = https://arc.aiaa.org/doi/pdf/10.2514/6.2024-0162>“A Multi-state Graph-based Framework for Dynamic Modeling of Turbomachinery Components,”</a> in <em>Proceedings of AIAA SCITECH 2024 Forum</em>, Orlando, FL, USA, January 8-12, 2024, doi: 10.2514/6.2024-0162.</li>
+							<li><b>N. Jain</b> and M. Borowitz, <a href = https://amostech.com/TechnicalPapers/2023/Poster/Jain.pdf>“A System-of-Systems Approach Towards Future Space Traffic Management Autonomy and Policy Co-Design”</a>, in <em>Proceedings of 24th Advanced Maui Optical and Space Surveillance Technologies (AMOS) Conference</em>, Wailea, HI, September 19-22, 2023.</li>
+							<li>M. Shanks, U. Inyang-Udoh, and <b>N. Jain</b>, “Experimental Validation of a Heuristic Control Strategy for a Transient Thermal Management System With Latent Thermal Energy Storage”, in <em>Proc. ASME International Technical Conference and Exhibition on Packaging and Integration of Electronic and Photonic Microsystems</em>, San Diego, CA, USA, 2023, V001T06A006, doi: 10.1115/IPACK2023-111816.</li>
+							<li>J. Ruan, U. Inyang-Udoh; B. Nooning, I. Parkes, W. Blejde, G. Chiu, and <b>N. Jain</b>, “Offline Model-Free Reinforcement Learning with a Recurrent Augmented Dataset for Highly Transient Industrial Processes,” in <em>Proc. IEEE 19th International Conference on Automation Science and Engineering (CASE)</em>, Auckland, New Zealand, 2023, pp. 1-7, doi: 10.1109/CASE56687.2023.10260473.</li>
+							<li>F. Mandali, M. Shanks, and <b>N. Jain</b>, <a href= "https://ieeexplore.ieee.org/document/10177617"> “Control Co-Design of a Thermal Management System with Integrated Latent Thermal Energy Storage and a Logic-based Controller,”</a> in <em>Proc. 22nd IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems</em>, Orlando, FL, USA, 2023, pp. 1-10, doi: 10.1109/ITherm55368.2023.10177617.</li>
+							<li>J. Siefert, T. J. Bird, J. Koeln, <b>N. Jain</b>, and H. Pangborn, <a href = "">“Successor Sets of Discrete-Time Nonlinear Systems using Hybrid Zonotopes,”</a> in <em>Proc. American Controls Conference</em>, San Diego, CA, USA, 2023, pp. 1383-1389, doi: 10.23919/ACC55779.2023.10156300.</li>
+							<li>U. Inyang-Udoh, M. Shanks, and <b>N. Jain</b>, <a href = "https://ieeexplore.ieee.org/document/10156427">“Model Predictive Control of a Hybrid Thermal Management System using State of Charge Estimation,”</a> in <em>Proc. American Controls Conference</em>, San Diego, CA, USA, 2023, pp. 2493-2499, doi: 10.23919/ACC55779.2023.10156427.</li>
+							<li>S. Mehotra, J. G. Hunter, M. Konishi, K. Akash, Z. Zheng, T. Misu, A. Kumar, T. Reid, and <b>N. Jain</b>, <a href="https://arxiv.org/abs/2303.09711">“Trust in shared automated vehicles – Study on two mobility platforms,”</a> 2023 Transportation Research Board Annual Meeting.</li>
+							<li>M. Konishi, J. G. Hunter, Z. K. Zheng, T. Misu, K. Akash, T. Reid, <b>N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S2405896323001027">“Inferring Takeover in SAE Level 2 Automated Vehicles Using Driver-Based Behavioral and Psychophysiological Signals.”</a> in <em>IFAC-PapersOnLine</em>, vol. 55, no. 41, pp. 7-12, 2022, doi: 10.1016/j.ifacol.2023.01.095.</li>
+							<li>M. S. Yuh, S. Byeon, I. Hwang, and <b>N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S2405896323001180">“A Heuristic Strategy for Cognitive State-based Feedback Control to Accelerate Human Learning,” </a> in <em>IFAC-PapersOnLine</em>, vol. 55, no. 41, pp. 107-112, 2022, doi: 10.1016/j.ifacol.2023.01.111.</li>
+							<li>J. Ruan, B. Nooning, I. Parkes, W. Blejde, G. Chiu, and <b>N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S2405896322028105">"A Training-Free Data-Driven Method for Input-Output Modeling of Complex Processes",</a> in <em>IFAC-PapersOnLine</em>, vol. 55, no. 37, pp. 92-98, 2022, doi: 10.1016/j.ifacol.2022.11.167</li>
+							<li>J. G. Hunter, M. Konishi, <b>N. Jain</b>, K. Akash, X. Wu, T. Misu, and T. Reid, <a href="https://journals.sagepub.com/doi/abs/10.1177/1071181322661311">"The Interaction Gap: A Step Toward Understanding Trust in Autonomous Vehicles Between Encounters."</a> in <em>Proc. of the Human Factors and Ergonomics Society Annual Meeting</em>, vol. 66, no. 1, pp. 147–151, Sep. 2022, doi: 10.1177/1071181322661311.</li>
+							<li>T. J. Bird, N. Jain, H. C. Pangborn, and J. P. Koeln, and <b>N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9867853">"Set-Based Reachability and the Explicit Solution of Linear MPC using Hybrid Zonotopes."</a> in <em>Proc. American Controls Conference</em>, Atlanta, GA, USA, 2022, pp. 158-165, doi: 10.23919/ACC53348.2022.9867853.  <b>(Winner for the ACC 2022 Best Student Paper Award)</b></li>
+							<li>J. Ruan, M. Ponder, I. Parkes, W. Blejde, G. Chiu, and <b>N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9867390">"Applying a Deep Q-Network for Human Operator Behavioral Modeling and Decision Support in a Twin-Roll Casting Process."</a> in <em>Proc. American Controls Conference</em>, Atlanta, GA, USA, 2022, pp. 689-696, doi: 10.23919/ACC53348.2022.9867390.</li>
+							<li>A. R. Manion, W. A. Malatesta, and <b>N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9899658">"Development of a Graph-based Modeling Framework for Transient Exergy Analysis."</a> in <em>in Proc. 21st IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems</em>, San Diego, CA, USA, 2022, pp. 1-10, doi: 10.1109/iTherm54085.2022.9899658.</li>
+							<li>M. Shanks and <b>N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9899546">"Control of a Hybrid Thermal Management System: A Heuristic Strategy for Charging and Discharging a Latent Thermal Energy Storage Device."</a> in <em>Proc. 21st IEEE Intersociety Conference on Thermal and Thermomechanical Phenomena in Electronic Systems</em>, San Diego, CA, USA, 2022, pp. 1-10, doi: 10.1109/iTherm54085.2022.9899546.</li>
+							<li>M. Glebocki, W. Malatesta, K. McCarthy, and <b>N. Jain</b>, <a href="https://arc.aiaa.org/doi/10.2514/6.2022-2444">"Exergy-based Analysis and Optimization of Complex Aircraft Thermal Management Systems."</a> in <em>AIAA SCITECH 2022 Forum, American Institute of Aeronautics and Astronautics</em>, 2021. doi: 10.2514/6.2022-2444.</li>
+							<li>B. Gillis and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9503136">"Numerical Validation of Effective Specific Heat Functions for Simulating Melting Dynamics in Latent Heat Thermal Energy Storage Modules."</a> in <em>Proc. 20th IEEE Intersociety Conf. on Thermal and Thermomechanical Phenomena in Electronic Systems</em>,  June 1-4, 2021.</li>
+							<li>A. Nash, H. Pangborn, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/document/9483216">"Robust Control Co-Design with Receding-Horizon MPC,"</a> in <em> Proc. American Control Conference,</em> New Orleans, LA, USA, 2021, pp. 373-379, doi: 10.23919/ACC50511.2021.9483216.</li>
+							<li>G. McMahon, K. Akash, T. Reid, and <b> N. Jain</b>, <a href= "https://www.sciencedirect.com/science/article/pii/S2405896321002160">"On Modeling Human Trust in Automation: Identifying distinct dynamics through clustering of Markovian models,"</a> in <em>IFAC-PapersOnLine</em>, vol. 53, no. 5, pp. 356-363, 2020, doi: 10.1016/j.ifacol.2021.04.113.</li>	
+							<li>K. Akash,<b> N. Jain</b>, and T. Misu, <a href="https://dl.acm.org/doi/10.1145/3382507.3418885">"Toward Adaptive Trust Calibration for Level 2 Driving Automation."</a> in <em>Proc. 2020 International Conference on Multimodal Interaction</em>, Utrecht, Netherlands, October 25-29, pp. 538-547, doi: 10.1145/3382507.3418885. </li>
+							<li>K. Gohil, M. Deckard, P. Shamberger, and <b> N. Jain </b> <a href= "https://ieeexplore.ieee.org/document/9190427">"A Reduced-order Model for Analyzing Heat Transfer in a Thermal Energy Storage Module."</a> in <em>Proc. 2020 19th IEEE Intersociety Conf. on Thermal and Thermomechanical Phenomena in Electronic Systems</em>, Orlando, FL, July 21-23, pp. 681-689, doi: 10.1109/ITherm45881.2020.9190427.</li>
+							<li>A. Guerrero de la Peña, N. Davendralingam, A. Raz, G. Shaver, D. DeLaurentis, Vivek A. Sujan, and <b> N. Jain </b> <a href="https://ieeexplore.ieee.org/document/8917452">"Modeling the Combined Effect of Powertrain Options and Autonomous Technology on Vehicle Adoption and Utilization by Line-haul Fleets."</a> in <em>Proc. 2019 IEEE Intelligent Transportation Systems Conf.</em>, Auckland, New Zealand, October 27-30, pp. 1231-1238, doi: 10.1109/ITSC.2019.8917452. </li>
+							<li>T. Bird, C. Weaver, and <b> N. Jain</b>, <a href="https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2019/59155/V002T23A006/1070566">"Switched Linear Model of a Stratified Hot Water Tank for Control of micro-CHP Systems."</a> in <em>Proc. ASME 2019 Dynamic Systems and Control Conf.</em>, Park City, UT, October 8-11, V002T23A006, doi: 10.1115/DSCC2019-9236. (Winner of the ASME DSCD Energy Systems Technical Committee Best Paper Award) </li>
+							<li>A. Nash, and <b> N. Jain</b>, <a href="https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2019/59155/V002T23A004/1070552?searchresult=1">"Dynamic Design Optimization for Thermal Management:  A Case Study on Shell-and-Tube Heat Exchangers."</a> in <em>Proc. ASME 2019 Dynamic Systems and Control Conf.</em>, Park City, UT, October 8-11, V002T23A004, doi: 10.1115/DSCC2019-9212. </li>
+							<li>F. Browne, G. Chiu, and <b> N. Jain</b>, <a href="https://asmedigitalcollection.asme.org/DSCC/proceedings/DSCC2019/59148/V001T09A005/1070459?searchresult=1">"A Coupled Adaptive Measurement Delay Estimation And Iterative Learning Control Algorithm."</a> in <em>Proc. ASME 2019 Dynamic Systems and Control Conf.</em>, Park City, UT, October 8-11, V001T09A005, doi: 10.1115/DSCC2019-9210. </li>
+							<li>A. Nash, T. Fisher, and <b> N. Jain</b>, <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8814340&isnumber=8814292">"Combined Plant and Control Design for a Flash Boiling Cooling System."</a> in <em>Proc. 2019 American Controls Conf.</em>, Philadelphia, PA, July 10-12, pp. 4229-4236, doi: 10.23919/ACC.2019.8814340. </li>
+							<li>A. Tam, D. Ziviani, J. E. Braun, and <b> N. Jain</b>, "Development and Evaluation of a Generalized Rule-Based Heuristic Control Strategy for Ice Storage Systems in Residential Buildings." in <em>10th International Conference on System Simulation in Buildings</em>, Liege, Belgium, December 10-12, 2018. </li>
+							<li>K. Akash, K. Polson, T. Reid, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S2405896319300308">"Improving Human-Machine Collaboration Through Transparency-based Feedback &mdash; Part I: Human Trust and Workload Model."</a> <em>IFAC-PapersOnLine</em>, vol. 51, no. 34, pp. 315-321, 2019, doi: 10.1016/j.ifacol.2019.01.028.</li>
+							<li>K. Akash, T. Reid, and <b> N. Jain</b>, <a href="https://www.sciencedirect.com/science/article/pii/S240589631930028X">"Improving Human-Machine Collaboration Through Transparency-based Feedback &mdash; Part II: Control Design and Synthesis."</a> <em>IFAC-PapersOnLine</em>, vol. 51, no. 34, pp. 322-328, 2019, doi: 10.1016/j.ifacol.2019.01.026.</li>
+							<li>A. Nash and <b> N. Jain</b>, <a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=2715326">"Second Law Modeling and Robust Control for Thermal-Fluid Systems."</a> in <em>Proc. 2018 ASME Dynamic Systems and Control Conf.</em>, Atlanta, GA, September 30 - October 3, V002T23A002, doi: 10.1115/DSCC2018-9028. (Finalist for the ASME DSCD Energy Systems Technical Committee Best Paper Award)</li>
+							<li>F. Browne, B. Rees, G. Chiu, and <b> N. Jain</b>, <a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=2715296">"ILC With Time-Varying Delay Estimation: A Case Study on Twin Roll Strip Casting."</a> in <em>Proc. 2018 ASME Dynamic Systems and Control Conf.</em>, Atlanta, GA, USA, Sep. 30 – Oct. 3, V002T23A002, doi: 10.1115/DSCC2018-9028. </li>
+							<li>A. Guerrero de la Peña, N. Davendralingam, A. Raz, G. Shaver, D. DeLaurentis, and <b> N. Jain</b>, <a href="https://ascelibrary.org/doi/10.1061/9780784481547.015">"Modeling Freight Transportation as a System-of-Systems to Determine Adoption of Emerging Vehicle Technologies."</a> in <em>Proc. International Conf. on Transportation and Development 2018: Traffic and Freight Operations and Rail and Public Transit</em>, Pittsburgh, PA, July 15-18, pp. 156-169.</li>
+							<li>F. Browne, G. Chiu, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/abstract/document/8430802">"Iterative Learning Control For Periodic Disturbances in Twin-Roll Strip Casting With Measurement Delay."</a> in  <em>Proc. 2018 American Control Conf.</em>, Milwaukee, WI, June 27-29, pp. 4458-4463, doi: 10.23919/ACC.2018.8430802. </li>
+							<li>K. Akash, T. Reid, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/abstract/document/8431132">"Adaptive Probabilistic Classification of Dynamic Processes: A Case Study on Human Trust in Automation."</a> in <em>Proc. 2018 American Control Conf.</em>, Milwaukee, WI, June 27-29, pp. 246-251, doi: 10.23919/ACC.2018.8431132. </li>
+							<li>K. Akash, W. Hu, T. Reid, and <b> N. Jain</b>, <a href="https://ieeexplore.ieee.org/abstract/document/7963172">"Dynamic Modeling of Trust in Human-Machine Interactions."</a>  <em>Proc. 2017 American Control Conf.</em>, Seattle, WA, May 24-26, pp. 1542-1548, doi: 10.23919/ACC.2017.7963172.</li>
+							<li>W. Hu, K. Akash, <b> N. Jain</b>, and T. Reid, <a href="https://www.sciencedirect.com/science/article/pii/S2405896316328609">"Real-Time Sensing of Trust in Human-Machine Interactions."</a>  <em>IFAC-PapersOnLine</em>, vol. 49, no. 32, pp. 48-53, 2016, doi: 10.1016/j.ifacol.2016.12.188.</li>
+							<li>F. Browne, G. Chiu, and <b> N. Jain</b>, <a href="https://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleID=2604441">"Dynamic Modeling of Twin-roll Steel Strip Casting."</a> in <em>Proc. ASME 2016 Dynamic Systems and Control Conf.</em>, Minneapolis, MN, October 12-14, V002T18A003, doi: 10.1115/DSCC2016-9698.</li>
+							<li>A. Nash and <b> N. Jain</b>, <a href="https://docs.lib.purdue.edu/ihpbc/213/">"Dynamic Modeling and Performance Analysis of Sensible Thermal Energy Storage Systems."</a> <em>Proc. of the 4th International High Performance Buildings Conference at Purdue University</em>, West Lafayette, IN, July 11-14, 2016. </li>
+							<li><b> N. Jain </b> and B. Hencey, <a href="https://ieeexplore.ieee.org/abstract/document/7524971">"Increasing Fuel Thermal Management System Capability via Objective Function Design."</a> <em>Proc. 2016 American Control Conf.</em>, Boston, MA, July 6-8, pp. 549-556, doi: 10.1109/ACC.2016.7524971. </li>
+							<li><b> N. Jain</b>, D. J. Burns, S. Di Cairano, C. R. Laughman, and S. A. Bortoff, <a href="https://docs.lib.purdue.edu/iracc/1545/">"Model Predictive Control of Vapor Compression Systems."</a> <em>Proc. of the 15th International Refrigeration and Air Conditioning Conference at Purdue University</em>, West Lafayette, IN, July 14-17, 2014. </li>
+							<li><b> N. Jain </b> and A. Alleyne, <a href="https://docs.lib.purdue.edu/iracc/1542/">"Transient Exergy Destruction Analysis for a Vapor Compression System."</a> in <em>Proc. of the 15th International Refrigeration and Air Conditioning Conference at Purdue University</em>, West Lafayette, IN, July 14-17, 2014. </li>
+							<li><b> N. Jain</b>, S. Sundaram, and A. Alleyne, <a href="https://ieeexplore.ieee.org/abstract/document/6425908">"Stability Analysis for Decentralized Control of Multi-Evaporator Vapor-Compression Cycle Systems."</a> in <em>Proc. 2012 IEEE 51st Conf. on Decision and Control</em>, Maui, Hawaii, December 10-13, pp. 7589-7595, doi: 10.1109/CDC.2012.6425908. </li>
+							<li>B. Li, <b> N. Jain</b>, and A. Alleyne, <a href="https://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1739288">"LMI Control Design for Nonlinear Vapor-Compression Cycle Systems."</a> in <em>Proc. ASME 2012 5th Annu. Dynamic Systems and Control Conf.</em>, Fort Lauderdale, FL, October 17-19, pp. 711-718, doi: 10.1115/DSCC2012-MOVIC2012-8862.</li>
+							<li>J. P. Koeln, M. D. Kania, <b> N. Jain</b>, and A. Alleyne, <a href="https://docs.lib.purdue.edu/iracc/1284/">"Experimental Load Emulation for Multi-Evaporator Air Conditioning and Refrigeration Systems."</a>  <em>Presented at the 14th International Refrigeration and Air Conditioning Conference at Purdue University</em>, West Lafayette, IN, July 16-19, 2012. </li>
+							<li><b> N. Jain </b> and A. Alleyne, <a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1638580">"Thermodynamics-Based Optimization and Control of Vapor-Compression Cycle Operation: Control Synthesis."</a> in <em>Proc. 2011 ASME Dynamic Systems and Control Conference</em>, Arlington, VA, October 31-November 2, pp. 827-834, doi: 10.1115/DSCC2011-6088.</li>
+							<li><b> N. Jain </b> and A. Alleyne, <a href="https://ieeexplore.ieee.org/abstract/document/5991005/">"Thermodynamics-Based Optimization and Control of Vapor-Compression Cycle Operation: Optimization Criteria."</a> in <em> Proc. 2011 American Control Conf</em>, San Francisco, CA, June 29-July 1, pp. 1352-1357, doi: 10.1109/ACC.2011.5991005. (Best Presentation in Session Award) </li>
+							<li><b> N. Jain</b>, R. Otten, and A. Alleyne, <a href="https://ieeexplore.ieee.org/abstract/document/5531218">"Decoupled Feedforward Control for an Air-Conditioning and Refrigeration System."</a> in  <em>Proc. 2010 American Control Conf</em>, Baltimore, MD, June 30-July 2, pp. 5904-5909, doi: 10.1109/ACC.2010.5531218.</li>
+							<li><b> N. Jain </b> and A. Alleyne, <a href="https://ieeexplore.ieee.org/abstract/document/5160155">"Comparison of SISO and MIMO Control Techniques for a Diagonally Dominant Vapor Compression System."</a> in <em>Proc. 2009 American Control Conf</em>, St. Louis, MO, June 10-12, pp. 1580-1585, doi: 10.1109/ACC.2009.5160155.</li>
+							<li>B. Hencey, <b> N. Jain</b>, B. Li, and A. Alleyne, <a href="http://proceedings.asmedigitalcollection.asme.org/proceeding.aspx?articleid=1629985">"Decentralized Feedback Structures of a Vapor Compression Cycle System."</a> in <em>Proc. ASME 2008 Dynamic Systems and Control Conf</em>, Ann Arbor, MI, October 20-22, pp. 809-816, doi: 10.1115/DSCC2008-2213.  (Best Presentation in Session Award) </li>		
+						</ol>
+							
+						<!-- <h3 id="talks">Invited Talks</h3> 
+						<ol type="1" style="padding-left: 2.0em" >
+							<li>K. Akash, W. Hu, T. Reid, and <b> N. Jain</b>, "A Classification Model for Sensing Human Trust in Machines Using EEG and GSR." <em>ACM Intelligent User Interfaces (IUI) Conference 2019</em>, Los Angeles, CA, March 16-20, 2019.</li>
+							<li>K. Akash, T. Reid, and <b> N. Jain</b>, "Reimagining Human-Machine Interactions Through Trust-Based Feedback." <em>Student Lightning Talks, 2019 Southwest Robotics Symposium</em>, Arizona State University, Tempe, AZ, January 24-25, 2019.</li>
+							<li>A. Guerrero de la Peña and <b> N. Jain</b>, "Modeling Adoption of Emerging Freight Transportation Vehicle Technologies." <em>104th Annual Purdue Road School</em>, West Lafayette, IN, March 7, 2018.</li>
+							<li>A. Nash and <b> N. Jain</b>, "Optimal Plant and Control Co-Design of Thermal Management Systems Subject to Transport Delays." <em>NATO Science and Technology Organization Workshop: AVT-270/TWS-028 Validation of Thermal Models for Military Power Systems</em>, Utrecht, Netherlands, October 10, 2017.</li>
+						</ol>
+							
+						<h3 id="patents">Patents</h3> 
+						<ol type="1" style="padding-left: 2.0em" >
+							<li>F. Browne, B. Rees, G. Chiu, and <b> N. Jain</b>, <a href="https://patents.google.com/patent/US20190091761A1/en">"Iterative Learning Control for Periodic Disturbances in Twin-Roll Strip Casting with Measurement Delay."</a> <em>US Patent 0091761</em>, March 28, 2019.</li>		
+							<li>D. J. Burns, <b> N. Jain</b>, C. Laughman, S. Di Cairano, and S. A. Bortoff, <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9625196.PN.&OS=PN/9625196&RS=PN/9625196">"System and Method for Controlling of Vapor Compression System."</a>  <em>US Patent 9625196</em>, April 18, 2017.</li>		
+						</ol> -->
+						
+						<!-- <h3 id="ResearchGate">ResearchGate</h3>
+							<a href="https://www.researchgate.net/lab/Jain-Research-Lab-Neera-Jain"> Jain Research Lab ResearchGate</a></h3>
+						
+						</div> -->
+					</div>
+				<div class="col-sm-1"></div>
+			</div>
+		</div>
+	</main>
+		<!-- footer of the page -->
+		<footer id="footer">
+			<!-- footer top -->
+			<div class="footer-top bg-shark">
+				<div class="container padding-top-30">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="holder">
+							<img src="./images/Eng-White.png" style="width:200px;height:auto;" class="mx-auto d-block">
+							<hr/>
+								<div align="center">
+								<p>Copyright © 2015-2023 JAIN Research Lab - All Rights Reserved</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</footer>
+
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!-- include JavaScript Plugins -->
+	<script type="text/javascript" src="js/plugins.js"></script>
+		<script src="js/jquery.backstretch.js"></script>
+	<script>
+        $("#shifting").backstretch([
+          "./images/city_bg2.jpg",
+          "./images/steel-jain.jpg",
+          "./images/science-thoughts.jpg"
+        ], {
+            fade: 750,
+            duration: 5000
+        });	
+    	</script>
+		
+	<!-- Bootstrap 5.0 js -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1315 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<script src="js/pgt.js"></script>
+<script src="js/randomthetas.js"></script>
+<script src="js/jQuery.js"></script>
+<script src="js/FileSaver.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+  integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<body>
+  <section>
+    <div id="mainPage" style="display: block">
+      <img src="images/purdue logo.png" alt="Purdue Logo" width="350" height="100">
+
+      <h2 style="text-align: center; text-decoration: underline">Modeling Human Trust in an Adaptive Automated Assistant
+        through an Interactive Computer Game</h2>
+      <br><br>
+      <p><strong><span style="font-size:18px;"><big>Thank you for your willingness to participate in this
+              study</big></span></strong></p>
+      <br>
+      <p style="color: red">DO NOT use REFRESH or BACK thoughout the study</p>
+      <br>
+      <p style="color:black">If you encounter any technical difficulties while playing the game, please make note of the
+        issue and the point in the game in which you experience this issue in the survey at the end. We greatly
+        appreciate your feedback.</p>
+      <br><br>
+      <p><span><big>Press Next to continue</big></span></p>
+      <p><span><big>
+            <button onclick="testScreen()">Next</button>
+          </big></span></p>
+    </div>
+  </section>
+
+  <section>
+    <div id="screenTestPage" style="display: none">
+      <p><strong><span style="font-size:18px;"><big>Before continuing with this study, please ensure you can see the
+              black border around all four sides of the green box.</big></span></strong></p>
+      <p>If you can not see all four borders, you will not be able to complete this study.</p>
+      <br>
+      <div class="screentest">
+        <div
+          style="width:1250px;height:600px;border:4px solid #000; background-color: honeydew; font-size:xx-large; font-weight: bold;">
+          Ensure you can see the black border around all 4 sides of this rectangle!</div>
+      </div>
+      <br><br>
+      <p><span><big>Press Next to continue</big></span></p>
+      <p><span><big>
+            <button onclick="getID()">Next</button>
+          </big></span></p>
+    </div>
+  </section>
+
+  <section>
+    <div id="getIDPage" style="display: none">
+      <h2><strong> Enter your WorkerID from Amazon Mechanical Turk:</strong></h2>
+      <p>In the box below, enter your WorkerID provided by Amazon Mechanical Turk. <br> After entering your WorkerID,
+        press "Next" to continue.</p>
+      <br>
+      <p style="color: red"><strong>Please make sure that your WorkerID is correct.</strong></p>
+      <br><br>
+
+      <form>
+        <div class="col-xs-4 offset-4">
+          <div class="input-group">
+            <label for="workeridval">WorkerID</label>
+            <input type="text" class="form-control" id="workeridval" aria-describedby="idval"
+              placeholder="Enter WorkerID">
+
+          </div>
+        </div>
+
+        <br><br><br><br>
+        <input type="button" class="btn btn-primary btnSeccion" id="btnSeccion3" value="Next" onclick="goToConsent()" />
+
+      </form>
+    </div>
+    <!--Pop Up Modal for FormValidation-->
+    <div class="modal fade" id="Val4Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Val4ModalLabel"><strong><big>Invalid Response</big></strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: center;"> Please enter your WorkerID</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div id="consentPage" style="display: none">
+      <h2 style="text-align: center;">RESEARCH PARTICIPANT CONSENT FORM</h2>
+
+      <h3 style="text-align: center;">NSF CPS-Frontier: Cognitive Autonomy for Human CPS: A Collaborative Study
+        <br>PIs: Dr. Brandon Pitts, Dr. Tahira Reid-Smith, and Dr. Neera Jain
+        <br>Schools of Industrial and Mechanical Engineering
+        <br>Purdue University
+      </h3>
+
+      <br><br>
+
+      <p>The hyperlink below will direct you to a new tab to read through the research consent form.
+        Please read through the document carefully.
+        After reading through the form, return to this tab and press "Next" if you consent to participating.
+      </p>
+
+      <a href="Consent Form - NSF CPS - online game.pdf" target="_blank" style="font-size:30px">Consent Form</a>
+      <br><br>
+      <p> If you have any questions or concerns, please send them to <b>Purdue.CPS@gmail.com</b>
+      </p>
+      <p>&nbsp;</p>
+
+      <p><span><big>Press "Next" to continue</big></span></p>
+
+      <p><span><big><button onclick="goToInstruct1()">Next</button></big></span></p>
+    </div>
+  </section>
+
+  <section>
+    <div id="instruct1Page" style="display: none">
+      <h2>Instructions</h2>
+
+      <p><big>Your task in this study is to improve your proficiency at playing an obstacle avoidance game using your
+          <b>dominant hand.</b>
+          In the game, you are tasked with navigating a penguin across an Arctic course to its home through a series of
+          obstacles.
+          A feature of this game is that it includes an algorithm that can provide assistance to you as you play.
+          Specifically, the algorithm will scale up or down your input to more closely match how an expert would play
+          the game.</big></p>
+
+
+
+      <div class="container">
+        <h2>Game Walkthrough</h2>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <img src="instructions/1_1.PNG" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="instructions/1_2.PNG" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="instructions/1_3.PNG" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="instructions/1_4.PNG" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="instructions/1_5.PNG" alt="" style="width:100%;">
+            </div>
+
+            <div class="item">
+              <img src="instructions/1_6.PNG" alt="" style="width:100%;">
+            </div>
+          </div>
+
+          <!-- Left and right controls -->
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+
+</body>
+
+</html>
+
+<br>
+
+<p>&nbsp;</p>
+
+<p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+<p><span style="font-size:20px;"><big><button id="next" onclick="goToInstruct2()">Next</button></big></span></p>
+
+<p><span style="font-size:20px;"><big>Press Back to review the previous page</big></span></p>
+
+<p><span style="font-size:20px; color: lightskyblue;"><big><button id="back"
+        onclick="goBackConsent()">Back</button></big></span></p>
+
+</div>
+</section>
+
+<section>
+  <div id="instruct2Page" style="display: none">
+    <h2>Instructions</h2>
+
+    <p><big>Your primary goal is to <b>avoid the obstacles</b> as well as <b>minimize the time</b> it takes for you to
+        successfully
+        take the penguin to its home.
+        To accomplish these goals, aim to navigate as close as possible to the barriers (without colliding into
+        them).</big></p>
+
+    <div class="container">
+      <h2>Game Walkthrough</h2>
+      <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel2" data-slide-to="1"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <img src="instructions/2_1.PNG" alt="" style="width:100%;">
+          </div>
+
+          <div class="item">
+            <img src="instructions/2_2.PNG" alt="" style="width:100%;">
+          </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel2" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel2" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+    <p>&nbsp;</p>
+
+    <p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="next" onclick="goToInstruct3()">Next</button></big></span></p>
+
+    <br>
+
+    <p><span style="font-size:20px;"><big>Press Back to review the previous page</big></span></p>
+
+    <p><span style="font-size:20px; color: lightskyblue;"><big><button id="back"
+            onclick="goBackInstruct1()">Back</button></big></span></p>
+  </div>
+</section>
+
+<section>
+  <div id="instruct3Page" style="display: none">
+    <h2>Instructions</h2>
+
+    <p><big> To start the game, move the cursor to the red box (Starting point).
+        When ready, click and hold the left button on the mouse to begin moving the penguin across the Arctic course.
+        <br><br>
+        You will play the game 11 times.
+        The first game you play will be a practice round to become familiar with the game dynamics. During this practice
+        round,you will
+        not have the option of selecting to receive assistance from the game's assistance algorithm. The option of doing
+        so will be available in games 1-10.
+        <br>
+        Each time you complete the game, press <b>next</b> and you will be re-directed to play again.
+      </big></p>
+    <p style="color: red"><big>Please maximize the screen size before starting the game! Hold the mouse in your dominant
+        hand.</big></p>
+
+    <p>&nbsp;</p>
+
+    <p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="next" onclick="goToPractice()">Next</button></big></span></p>
+
+    <br>
+
+    <p><span style="font-size:20px;"><big>Press Back to review the previous page</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="back" onclick="goBackInstruct2()">Back</button></big></span></p>
+  </div>
+</section>
+
+<section>
+  <div id="practicePage" style="display: none">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      canvas {
+        background-image: url("images/ant.jpeg");
+        background-repeat: no-repeat;
+        background-size: 1250px 600px;
+        display: block;
+        margin: 0 auto;
+        border: black 2px solid;
+        padding: 100
+      }
+
+      
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+    <h2>Practice Game</h2>
+
+    <p><span>Take your cursor to the red box. Click to begin the game. Move the mouse to control the penguin and take it
+        home. Be sure to use
+        your dominant hand.</span></p>
+    <p><span>Press Next to continue after you complete the practice rounds</span></p>
+
+    <p><span><big><button id="next" onclick="goToPracticeScore()">Next</button></big></span></p>
+
+  </div>
+</section>
+
+<section>
+  <div id="practiceScorePage" style="display: none">
+    <h2>Practice Results</h2>
+    <p>A summary of the results of each trial game performance will be provided after each respective completion.</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-10">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Game</th>
+                <!--<th scope="col">Score</th>-->
+                <th scope="col">Obstacle Collisions</th>
+                <th scope="col">Total Time (Seconds)</th>
+                <th scope="col">Max Distance from Obstacle</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span id="practice_number"></span></th>
+                <!--<td id="game_score"></td>-->
+                <th><span id="practice_collision"></span></td>
+                <th><span id="practice_time"></span></td>
+                <th><span id="practice_dist"></span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+
+
+    <p><span><big><button id="next" onclick="goToLevelSelect1()">Next</button></big></span></p>
+  </div>
+</section>
+
+
+<section>
+  <div id="levelSelectPage" style="display: none">
+    <h2>Assistance Level Selector</h2>
+
+    <style>
+      .slidecontainer {
+        width: 100%;
+      }
+
+      .slider {
+        -webkit-appearance: none;
+        width: 100%;
+        height: 15px;
+        border-radius: 5px;
+        background: #d3d3d3;
+        outline: none;
+        opacity: 0.7;
+        -webkit-transition: .2s;
+        transition: opacity .2s;
+      }
+
+      .slider:hover {
+        opacity: 1;
+      }
+
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #4CAF50;
+        cursor: pointer;
+      }
+
+      .checkboxgroup {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .checkboxgroup label {
+        display: block;
+      }
+    </style>
+
+    <h2>Instructions</h2>
+
+    <p><big> In the following games you will have the option of receiving assistance from automation to optimize your
+        performance throughout the game.
+        <br><br>Two options are available: Disable and Enable assistance
+        <br><br>Select your desired option for game 1 below:
+      </big></p>
+
+    <br><br>
+
+    <br>
+
+
+    <form id="game1assistance_form">
+      <div id="game1assistance">
+        <div class="btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light btn-lg">
+            <input type="radio" name="assist1" id="g1_1" value="0"> Disable
+          </label>
+          <label class="btn btn-light btn-lg">
+            <input type="radio" name="assist1" id="g1_2" value="1"> Enable
+          </label>
+        </div>
+      </div>
+    </form>
+
+
+    <p>&nbsp;</p>
+    <br>
+    <p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="next" onclick="validateForm()">Next</button></big></span></p>
+
+    <!-- <p id="demo"></p> -->
+
+    <!--Pop Up Modal for FormValidation-->
+    <div class="modal fade" id="Val1Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Val1ModalLabel"><strong><big>Invalid Response</big></strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: center;"> Please make sure to select an option.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</section>
+
+<section>
+  <div id="gamePage" style="display: none">
+    <h2>
+      Game <span id="gamePage_number"></span>
+    </h2>
+
+    <p><span>Take your cursor to the red box. Click to begin the game. Move the mouse to control the penguin and take it
+        home. Be sure to use
+        your dominant hand.</span></p>
+    <p><span>Press Next to continue once you complete the game</span></p>
+
+    <p><span><big><button id="next" onclick="goToGameScore()">Next</button></big></span></p>
+
+  </div>
+</section>
+
+<section>
+  <div id="gameScorePage" style="display: none">
+    <h2>Game <span id="gameScore_number"></span> Results</h2>
+    <p>The results are provided below.</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col-10">
+          <table class="table table-bordered">
+            <thead class="thead-light">
+              <tr>
+                <th scope="col">Game</th>
+                <!--<th scope="col">Score</th>-->
+                <th scope="col">Obstacle Collisions</th>
+                <th scope="col">Total Time (seconds) </th>
+                <th scope="col">Max Distance from Obstacle</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span id="game_number"></span></th>
+                <!--<td id="game_score"></td>-->
+                <th><span id="game_collision"></span></td>
+                <th><span id="game_time"></span></td>
+                <th><span id="game_dist"></span></td>
+              </tr>
+              <th scope="row"><span id="prev1_game_number"></span></th>
+              <th><span id="prev1_game_collision"></span></td>
+              <th><span id="prev1_game_time"></span></td>
+              <th><span id="prev1_game_dist"></span></td>
+                </tr>
+                </tr>
+              <th scope="row"><span id="prev2_game_number"></span></th>
+              <th><span id="prev2_game_collision"></span></td>
+              <th><span id="prev2_game_time"></span></td>
+              <th><span id="prev2_game_dist"></span></td>
+                </tr>
+                </tr>
+              <th scope="row"><span id="prev3_game_number"></span></th>
+              <th><span id="prev3_game_collision"></span></td>
+              <th><span id="prev3_game_time"></span></td>
+              <th><span id="prev3_game_dist"></span></td>
+                </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+
+      <!--Pop Up Modal for FormValidation-->
+      <div class="modal fade" id="ScoreModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ScoreModalLabel"><strong><big>Warning</big></strong></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p style="text-align: center;"> That was fast! Please slow down and avoid the obstacles. The Penguin is
+                tired.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                onclick="getTrustGameNum();goToTrust()">Next</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <p><span><big><button id="next" onclick="SpeedVerification()">Next</button></big></span></p>
+  </div>
+</section>
+
+<section>
+  <div id="trustPage" style="display: none">
+    <style>
+      .checkboxgroup {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .checkboxgroup label {
+        display: block;
+      }
+    </style>
+
+    <h2>Game <span id="trustGame_number"></span> Survey</h2>
+    <p>The following questions ask about your trust and self-confidence while interacting with the game. In answering
+      the following questions refer to the definitions of trust and self-confidence provided below:</p>
+    <br>
+    <h4><b>Trust</b> is defined as assured reliance on the character, ability, strength, or truth of someone or
+      something. </h4>
+    <h4>In the context of this game, answer the questions below regarding trust as your assured reliance on the ability
+      of the automation in aiding your performance.</h4>
+    <br>
+    <h4><b>Self-confidence</b> is defined as confidence in oneself and in one's powers and abilities. </h4>
+    <h4>In the context of this game, answer the questions below regarding self-confidence as your confidence in
+      performing the game without any assistance.</h4>
+    <br>
+
+    <p><big> Based on your experience in the previous game, please rate your level of trust in the automation:
+      </big></p>
+
+    <div id="trustLevelSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="trust" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Low</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Moderate</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 High</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <p><big> Based on your experience in the previous game, please rate your agreement with the following statement:
+        <br><br><em>"Using the automation helps to improve my score in the game." </em>
+      </big></p>
+
+    <div id="autoAgreeSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="autoagree" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Strongly Disagree</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Undecided</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 Strongly Agree</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <p><big> Based on your experience in the previous game, please rate your level of self-confidence in playing the
+        game:
+      </big></p>
+
+    <div id="confLevelSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="conf" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Low</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Moderate</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 High</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <h2>Instructions</h2>
+
+    <p><big> In the following games you will have the option of receiving assistance from automation to optimize your
+        performance throughout the game.
+        <br><br>Two options are available: Disable and Enable assistance
+        <br><br>Select your desired option for game <span id="nextGame_number1"></span>
+
+        below:
+      </big></p>
+
+    <br><br>
+
+    <h2>Game <span id="nextGame_number2"></span> Assistance Selector
+    </h2>
+
+    <br>
+
+    <form id="gameassistance_form">
+      <div id="gameassistance">
+        <div class="btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light btn-lg" for="g2_1">
+            <input type="radio" name="assist" id="g2_1" value="0"> Disable
+          </label>
+
+          <label class="btn btn-light btn-lg" for="g2_2">
+            <input type="radio" name="assist" id="g2_2" value="1"> Enable
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <p>&nbsp;</p>
+    <br>
+    <p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="next" onclick="validateForm()">Next</button></big></span></p>
+
+    <!--Pop Up Modal for FormValidation-->
+    <div class="modal fade" id="Val2Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Val2ModalLabel"><strong><big>Invalid Response</big></strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: center;"> Please make sure to answer all questions.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="lastTrustPage" style="display: none">
+    <style>
+      .checkboxgroup {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .checkboxgroup label {
+        display: block;
+      }
+    </style>
+
+    <h2>Last Game Survey</h2>
+    <p>The following questions ask about your trust and self-confidence while interacting with the game. In answering
+      the following questions refer to the definitions of trust and self-confidence provided below:</p>
+    <br>
+    <h4><b>Trust</b> is defined as assured reliance on the character, ability, strength, or truth of someone or
+      something. </h4>
+    <h4>In the context of this game, answer the questions below regarding trust as your assured reliance on the ability
+      of the automation in aiding your performance.</h4>
+    <br>
+    <h4><b>Self-confidence</b> is defined as confidence in oneself and in one's powers and abilities. </h4>
+    <h4>In the context of this game, answer the questions below regarding self-confidence as your confidence in
+      performing the game without any assistance.</h4>
+    <br>
+
+    <p><big> Based on your experience in the previous game, please rate your level of trust in the automation:
+      </big></p>
+
+    <div id="trustLevelSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="trustLast" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Low</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Moderate</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 High</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <p><big> Based on your experience in the previous game, please rate your agreement with the following statement:
+        <br><br><em>"Using the automation helps to improve my score in the game." </em>
+      </big></p>
+
+    <div id="autoAgreeSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="autoagreeLast" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Strongly Disagree</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Undecided</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 Strongly Agree</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+
+    <p><big> Based on your experience in the previous game, please rate your level of self-confidence in playing the
+        game:
+      </big></p>
+
+    <div id="confLevelSlider">
+      <!-- Jake trying to implement the sliders -->
+      <div class="middle">
+        <br>
+        <div class="slider-container">
+          <span class="bar"><span class="fill"></span></span>
+          <input type="range" id="confLast" class="slider" min="0" max="100" value="50" step="5">
+          <div class="sliderticks" style="font-family: Helvetica-Neue, Arial, sans-serif; font-size: 14px;">
+            <p>0 Low</p>
+            <p></p>
+            <p>10</p>
+            <p></p>
+            <p>20</p>
+            <p> </p>
+            <p>30</p>
+            <p></p>
+            <p>40</p>
+            <p></p>
+            <p>50 Moderate</p>
+            <p></p>
+            <p>60</p>
+            <p></p>
+            <p>70</p>
+            <p> </p>
+            <p>80</p>
+            <p></p>
+            <p>90</p>
+            <p></p>
+            <p>100 High</p>
+          </div>
+          <!-- <p>Value: <span id="demo"></span></p> -->
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <h2>Final Assistance Level Selection</h2>
+
+    <p><big> Congratulations! You have completed all fifteen games. If you were to play another game, what assistance
+        option would you choose?
+        <br><br>Two options are available: Disable and Enable assistance
+        <br><br>Select your desired option below:
+
+        below:
+      </big></p>
+
+    <br><br>
+
+    <h2>Game Assistance Selector
+    </h2>
+
+    <br>
+
+    <form id="game2assistance_form">
+      <div id="game2assistance">
+        <div class="btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-light btn-lg">
+            <input type="radio" name="assist" id="g3_1" value="0"> Disable
+          </label>
+          <label class="btn btn-light btn-lg">
+            <input type="radio" name="assist" id="g3_2" value="1"> Enable
+          </label>
+        </div>
+      </div>
+    </form>
+
+    <p>&nbsp;</p>
+    <br>
+    <p><span style="font-size:20px;"><big>Press Next to continue</big></span></p>
+
+    <p><span style="font-size:20px;"><big><button id="next" onclick="validateForm()">Next</button></big></span></p>
+
+    <!--Pop Up Modal for FormValidation-->
+    <div class="modal fade" id="Val3Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="Val3ModalLabel"><strong><big>Invalid Response</big></strong></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p style="text-align: center;"> Please make sure to answer all questions.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div id="qualtricsPage" style="display:none">
+    <h2>Thank you for completing the study. Please fill out and submit the survey below before closing out of this
+      window. Your completion code for MTurk will be provided at the end of this survey.
+      If you would like to open the survey on a separate new tab, click <a
+        href="" target="_blank">here</a>. // TODO: ADD SURVEY LINK HERE FOR HYPERLINK
+    </h2>
+    <br>
+    //TODO: PUT LINK TO SURVEY INTO FRAME
+    <!-- <iframe src="PUT LINK TO SURVEY HERE" height="800px" width="600px"></iframe> -->
+  </div>
+</section>
+
+
+<script>
+  function testScreen() {
+    document.getElementById("mainPage").style.display = "none";
+    document.getElementById("screenTestPage").style.display = "block";
+  }
+</script>
+
+<script>
+  function getID() {
+    document.getElementById("screenTestPage").style.display = "none";
+    document.getElementById("getIDPage").style.display = "block";
+  }
+</script>
+
+<script>
+  function goToConsent() {
+    if (document.getElementById('workeridval').value.length == 0) {
+      $("#Val4Modal").modal('show');
+    } else {
+      var workerid = document.getElementById('workeridval').value;
+      theta_list = group_check();
+      create_result_file(workerid, group_number);
+      document.getElementById("getIDPage").style.display = "none";
+      document.getElementById("consentPage").style.display = "block";
+    }
+  }
+</script>
+
+<script>
+  function goBackConsent() {
+    document.getElementById("consentPage").style.display = "block";
+    document.getElementById("instruct1Page").style.display = "none";
+  }
+</script>
+
+<script>
+  function goToInstruct1() {
+    document.getElementById("consentPage").style.display = "none";
+    document.getElementById("instruct1Page").style.display = "block";
+  }
+</script>
+
+<script>
+  function goToInstruct2() {
+    document.getElementById("instruct2Page").style.display = "block";
+    document.getElementById("instruct1Page").style.display = "none";
+  }
+</script>
+
+<script>
+  function goBackInstruct1() {
+    document.getElementById("instruct2Page").style.display = "none";
+    document.getElementById("instruct1Page").style.display = "block";
+  }
+</script>
+
+<script>
+  function goToInstruct3() {
+    document.getElementById("instruct3Page").style.display = "block";
+    document.getElementById("instruct2Page").style.display = "none";
+  }
+</script>
+
+<script>
+  function goBackInstruct2() {
+    document.getElementById("instruct2Page").style.display = "block";
+    document.getElementById("instruct3Page").style.display = "none";
+  }
+</script>
+
+<script>
+  function goToPractice() {
+    window.killGame();
+    document.getElementById("practicePage").style.display = "block";
+    document.getElementById("instruct3Page").style.display = "none";
+    window.startGame();
+  }
+</script>
+
+<script>
+  function goToPracticeScore() {
+    if (game_done == true) {
+      window.killGame();
+      document.getElementById("practicePage").style.display = "none";
+      document.getElementById("practiceScorePage").style.display = "block";
+    }
+  }
+</script>
+
+<script>
+  function goToLevelSelect1() {
+    document.getElementById("practiceScorePage").style.display = "none";
+    document.getElementById("levelSelectPage").style.display = "block";//next trial
+
+  }
+</script>
+
+<script>
+  function goToGame1() {
+    trial_it = 1;
+
+    assistanceLevelVal = document.querySelector('input[name="assist1"]:checked').value;
+
+    var workerid = document.getElementById('workeridval').value;
+    var trustVal = 9;
+    var confVal = 9;
+    var autoAgreeVal = 9;
+    save_result(workerid, assistanceLevelVal, trustVal, confVal, group_number, autoAgreeVal);
+    set_alpha(assistanceLevelVal);
+
+    window.restartGame();
+
+    document.getElementById("levelSelectPage").style.display = "none";
+    document.getElementById("gamePage").style.display = "block";
+
+  }
+</script>
+
+<script>
+  function goToGame() {
+    if (trial_it >= total_games) {
+      trial_it = trial_it + 1;
+      var workerid = document.getElementById('workeridval').value;
+      var trustVal = document.getElementById("trustLast").value;
+      var confVal = document.getElementById("confLast").value;
+      var autoAgreeVal = document.getElementById("autoagreeLast").value;
+      assistanceLevelVal = document.querySelector('input[name="assist"]:checked').value;
+      save_result(workerid, assistanceLevelVal, trustVal, confVal, group_number, autoAgreeVal);
+      //save_result(workerid, assistanceLevelVal, trustVal, confVal, group_number, autoAgreeVal);
+      goToQualtrics();
+
+    } else {
+      trial_it = trial_it + 1;
+
+      var workerid = document.getElementById('workeridval').value;
+      var trustVal = document.getElementById("trust").value;
+      var confVal = document.getElementById("conf").value;
+      var autoAgreeVal = document.getElementById("autoagree").value;
+      assistanceLevelVal = document.querySelector('input[name="assist"]:checked').value;
+      save_result(workerid, assistanceLevelVal, trustVal, confVal, group_number, autoAgreeVal);
+
+      document.getElementById("trust").value = 50;//trustVal;
+      document.getElementById("conf").value = 50;// confVal;
+      document.getElementById("autoagree").value = 50;//autoAgreeVal;
+
+      if (trial_it > 1) {
+        $('[data-toggle="buttons"] :radio').prop('checked', false);
+        $('[data-toggle="buttons"] label').removeClass('active');
+      }
+
+      if (trial_it == total_games - 2) {
+        document.getElementById("trustLast").value = 50; //trustVal;
+        document.getElementById("confLast").value = 50; //confVal;
+        document.getElementById("autoagreeLast").value = 50; //autoAgreeVal;
+      }
+
+
+      set_alpha(assistanceLevelVal);
+
+      window.restartGame();
+
+      document.getElementById("trustPage").style.display = "none";
+      document.getElementById("gamePage").style.display = "block";
+    }
+  }
+
+  function goToQualtrics() {
+    window.killGame();
+    document.getElementById("lastTrustPage").style.display = "none";
+    document.getElementById("qualtricsPage").style.display = "block";
+  }
+
+</script>
+
+<script>
+  function goToGameScore() {
+    if (game_done == true) {
+      window.killGame();
+      document.getElementById("gamePage").style.display = "none";
+      document.getElementById("gameScorePage").style.display = "block";
+
+    }
+  }
+</script>
+
+<script>
+  function goToTrust() {
+    if (trial_it == total_games) {
+      document.getElementById("gameScorePage").style.display = "none";
+      document.getElementById("lastTrustPage").style.display = "block";
+    } else {
+      document.getElementById("gameScorePage").style.display = "none";
+      document.getElementById("trustPage").style.display = "block";
+    }
+  }
+</script>
+
+<script>
+  function getGamePageNum() {
+    document.getElementById("gamePage_number").innerHTML = parseFloat(trial_it + 1);
+  }
+</script>
+
+<script>
+  function getTrustGameNum() {
+
+    if (trial_it < total_games) {
+      document.getElementById("trustGame_number").innerHTML = parseFloat(trial_it);
+      document.getElementById("nextGame_number1").innerHTML = parseFloat(trial_it + 1);
+      document.getElementById("nextGame_number2").innerHTML = parseFloat(trial_it + 1);
+    }
+  }
+</script>
+
+<script>
+  function validateForm() {
+    if (trial_it == 0) {
+      if ($('input[name=assist1]:checked').length == 1) {
+        getGamePageNum();
+        goToGame1();
+      } else {
+        $("#Val1Modal").modal('show'); -
+          console.log("no");
+      }
+    } else if (trial_it < total_games) {
+      if ($('input[name=assist]:checked').length == 1) {
+        getGamePageNum();
+        goToGame();
+      } else {
+        $("#Val2Modal").modal('show');
+        console.log("no");
+      }
+    } else if (trial_it == total_games) {
+      if ($('input[name=assist]:checked').length == 1) {
+        getGamePageNum();
+        goToGame();
+      } else {
+        $("#Val3Modal").modal('show');
+        console.log("no");
+      }
+    }
+  }
+</script>
+
+<script>
+  function SpeedVerification() {
+    if (trial_it == 1) {
+      Penguin_Stats = 0;
+    }
+    if (rec_time <= 6 && rec_collide >= 3) {
+      Penguin_Stats = Penguin_Stats + 1;
+    }
+
+    if (Penguin_Stats <= 1) {
+      getTrustGameNum();
+      goToTrust()
+    } else if (Penguin_Stats > 1) {
+      if (rec_time <= 6 && rec_collide >= 3) {
+        $("#ScoreModal").modal('show');
+      } else {
+        getTrustGameNum();
+        goToTrust()
+      }
+    }
+  }
+</script>
+
+</body>
+
+</html>

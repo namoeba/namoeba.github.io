@@ -1,0 +1,200 @@
+body {
+  background-color:#FFFFFF;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+/* canvas {
+  background-image: url("images/ant.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1250px 600px;
+  display: block;
+  margin: 0 auto;
+  border: black 2px solid;
+  padding: 100
+
+
+} */
+
+
+p {
+	margin-left: 20%;
+	margin-right: 20%;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+span{
+  font-size:20px;
+}
+
+div{
+  font-size:20px;
+  text-align: center;
+  padding-left: 0px;
+  padding-right:0px;
+}
+
+
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e7e7e7;
+  color: black;
+}
+
+.input-group {
+  text-align:center;
+}
+
+.screentest {
+  display: flex;
+  justify-content: center;
+  min-width:1250px;
+  min-height: 600px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 32px;
+	font-family: arial, helectiva, times new roman;
+}
+.sliderticks {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 7px;
+}
+
+.sliderticks p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 1px;
+  background: #D3D3D3;
+  height: 10px;
+  line-height: 40px;
+  margin: 0 0 20px 0;
+}
+.middle {
+	margin: auto;
+	margin-bottom: 100px;
+	width: 50%;
+	max-width: 500px; /* was 500px */
+}
+.slider-container {
+	position: relative;
+}
+.slider-container .bar {
+	position: absolute;
+	z-index: 1;
+	left: 7px;
+	right: 7px;
+	top: 7px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #5c5c5c;
+	overflow: hidden;
+
+}
+
+.slider-container .bar .fill {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #0f9d58;
+}
+.slider-container .slider {
+	position: relative;
+	z-index: 2;
+	-webkit-appearance: none;
+	margin: 0;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+
+	
+}
+.slider-container .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: #0f9d58;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 0;
+	transform: rotate(-45deg) translate(45%, -45%);
+	cursor: pointer;
+	outline: none;
+
+	transition: 3s ease-in-out;
+}
+
+
+<!-- /* Slider for 2nd Question */ -->
+.slider-container2 {
+	position: relative;
+}
+.slider-container2 .bar2 {
+	position: absolute;
+	z-index: 1;
+	left: 7px;
+	right: 7px;
+	top: 7px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #5c5c5c;
+	overflow: hidden;
+}
+.slider-container2 .bar2 .fill2 {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: #0f9d58;
+}
+.slider-container2 .slider2 {
+	position: relative;
+	z-index: 2;
+	-webkit-appearance: none;
+	margin: 0;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	outline: none;
+	background-color: transparent;
+}
+.slider-container2 .slider2::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 20px;
+	height: 20px;
+	background-color: #0f9d58;
+	border-top-left-radius: 50%;
+	border-top-right-radius: 50%;
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 0;
+	transform: rotate(-45deg) translate(45%, -45%);
+	cursor: pointer;
+	outline: none;
+	transition: 3s ease-in-out;
+}
+

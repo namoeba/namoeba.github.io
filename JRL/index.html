@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- set the title of your site -->
+	<title>Jain Research Lab at Purdue University</title>
+	<!-- ========= Favicon Icons ========= -->
+	<link rel="shortcut icon" href="#">
+
+	<!-- include Google fonts  -->
+	<link
+		href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic%7CPlayfair+Display:400,400italic,700,700italic,900,900italic%7CRoboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900%7CRaleway:400,100,200,300,500,600,700,800,900%7CGreat+Vibes%7CPoppins:400,300,500,600,700'
+		rel='stylesheet' type='text/css'>
+	<!-- include the site stylesheet of bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- include the font awesome stylesheet  -->
+	<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css"> -->
+	<script src="https://kit.fontawesome.com/22055f2d30.js" crossorigin="anonymous"></script>
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<!-- include the stylesheets of headers and footer of the page  -->
+	<link rel="stylesheet" type="text/css" href="css/page-assets.css">
+	<!-- include the helping elements stylesheets of  the page  -->
+	<link rel="stylesheet" type="text/css" href="css/helper-elements.css">
+	<!-- include the site stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- include the site color stylesheet  -->
+	<link rel="stylesheet" type="text/css" href="css/color/color.css">
+	<!-- Bootstrap Font Icon CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+	<!-- Include bootstrap 5 -->
+	<link rel=”stylesheet” href="css/bootstrap.min.css">
+
+
+	<style>
+		h1,
+		h2,
+		h3,
+		h4 {
+			color: #2e7272;
+			text-transform: uppercase;
+		}
+
+		#theImage {
+			width: auto;
+			height: auto;
+		}
+
+		#container {
+			< !--width: auto;
+			-->height: 90px;
+			margin: 0 auto;
+		}
+
+		.responsive {
+			max-width: 100%;
+			height: auto;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		.carousel-control-next-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+		}
+
+		.carousel-control-prev-icon {
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='grey' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+		}
+
+		/* .carousel-indicators {background-color: black;
+						  opacity: 0.5 !important;}
+	.carousel-indicators .active{background-color: white !important;} */
+		.carousel-indicators [data-bs-target] {
+			box-sizing: content-box;
+			flex: 0 1 auto;
+			width: 30px;
+			height: 3px;
+			padding: 0;
+			margin-right: 3px;
+			margin-left: 3px;
+			text-indent: -999px;
+			cursor: pointer;
+			background-color: black;
+			background-clip: padding-box;
+			border: 0;
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;
+			opacity: 0.5;
+			transition: opacity 0.6s ease;
+		}
+
+		.carousel-indicators .active {
+			background-color: grey !important;
+		}
+
+		.fa-twitter {
+			padding: 18px;
+			font-size: 30px;
+			width: 66px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+			border-radius: 50%;
+			background: #55ACEE;
+			color: white;
+		}
+
+		.fa-twitter:hover {
+			opacity: 0.7;
+		}
+
+		.fa-google {
+			padding: 18px;
+			font-size: 30px;
+			width: 66px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+			border-radius: 50%;
+			background: #dd4b39;
+			color: white;
+		}
+
+		.fa-google:hover {
+			opacity: 0.7;
+		}
+
+		.fa-linkedin {
+			padding: 18px;
+			font-size: 30px;
+			width: 66px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+			border-radius: 50%;
+			background: #007bb5;
+			color: white;
+		}
+
+		.fa-linkedin:hover {
+			opacity: 0.7;
+		}
+
+		.fa-instagram {
+			padding: 18px;
+			font-size: 30px;
+			width: 66px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+			border-radius: 50%;
+			background: #125688;
+			color: white;
+		}
+
+		.fa-instagram:hover {
+			opacity: 0.7;
+		}
+
+		.fa-researchgate {
+			padding: 18px;
+			font-size: 30px;
+			width: 66px;
+			text-align: center;
+			text-decoration: none;
+			margin: 2px 2px;
+			border-radius: 50%;
+			background: #00b489;
+			color: white;
+		}
+
+		.fa-researchgate:hover {
+			opacity: 0.7;
+		}
+	</style>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-90541437-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+
+	<!-- contain main informative part of the site -->
+	<main id="main" role="main">
+		<!-- page banner -->
+		<header class="page-banner small grey" id="shifting">
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col-sm-5">
+						<a href="#"><img src="images/jainlogo2.png" width="100%"></a>
+					</div>
+					<div class="col">
+						<nav class="navbar navbar-expand-sm bg-transparent navbar-dark justify-content-center">
+							<div class="container-fluid">
+								<ul class="navbar-nav">
+									<li class="nav-item" style="color:#FFF;"></li><a class="nav-link h6 active"
+										href="#">HOME</a></li>
+									<li class="nav-item" style="color:#FFF;"></li><a class="nav-link h6"
+										href="./about.html">ABOUT</a></li>
+									<li class="nav-item h6 dropdown" style="color:#FFF;">
+										<a class="nav-link dropdown-toggle" href="#" role="button"
+											data-bs-toggle="dropdown">NEWS</a>
+										<ul class="dropdown-menu">
+											<li><a class="dropdown-item" href="./news/CurrentYear.html">CURRENT YEAR</a></li>
+											<li><a class="dropdown-item" href="./news/2024.html">2024</a></li>
+											<li><a class="dropdown-item" href="./news/2023.html">2023</a></li>
+											<li><a class="dropdown-item" href="./news/2022.html">2022</a></li>
+											<li><a class="dropdown-item" href="./news/2021.html">2021</a></li>
+											<li><a class="dropdown-item" href="./news/2020.html">2020</a></li>
+											<li><a class="dropdown-item" href="./news/2019.html">2019</a></li>
+											<li><a class="dropdown-item" href="./news/2018.html">2018</a></li>
+											<li><a class="dropdown-item" href="./news/2017.html">2017</a></li>
+											<li><a class="dropdown-item" href="./news/2016.html">2016</a></li>
+											<li><a class="dropdown-item" href="./news/2015.html">2015</a></li>
+										</ul>
+									</li>
+									<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./research.html">RESEARCH</a></li>
+									<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./people.html">PEOPLE</a></li>
+									<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./publications.html">PUBLICATIONS</a></li>
+									<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./github.html">GITHUB</a></li>
+									<li class="nav-item" style="color:#FFF;"><a class="nav-link h6"
+											href="./contact.html">CONTACT</a></li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+			</div>
+
+		</header>
+
+		<div class="container padding-top-30 container padding-bottom-20">
+			<div class="row">
+				<div class="col-7 offset-1">
+					<h1 style="margin-top: 0px; padding-left:0px;">Welcome to the JAIN Research Lab</h1>
+					<hr>
+						<span style="font-size:1.2em;">
+							<!-- The Jain Research Lab is currently recruiting new PhD and MS students, as well as summer undergraduate researchers through the Purdue SURF program.   -->
+							<p align="center">Watch the video below to hear from Dr. Jain about our group! </p>
+						</span>
+						<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/n21i7UUhGek?si=W9E1tUSR9o4hvguy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						</p>
+
+			
+				</div>
+
+				<div class="col-3">
+					<div class="container">
+						<nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+							<div class="container-fluid">
+								<ul class="nav flex-column">
+									<li class="nav-item">
+										<a class="fab fa-researchgate nav-link" aria-current="page"
+											href="https://www.researchgate.net/lab/Jain-Research-Lab-Neera-Jain"></a>
+										Researchgate
+									</li>
+									<li class="nav-item">
+										<a class="fa fa-linkedin nav-link"
+											href="https://www.linkedin.com/in/neerajain/"></a> LinkedIn
+									</li>
+									<li class="nav-item">
+										<a class="fa fa-google nav-link"
+											href="https://scholar.google.com/citations?hl=en&user=STBd1DoAAAAJ"></a> Google
+										Scholar
+									</li>
+									<li class="nav-item">
+										<a class="fa fa-google nav-link" href="https://engineering.purdue.edu/Herrick"></a>
+										Ray W Herrick Labs
+									</li>
+									<li class="nav-item">
+										<a class="fa fa-google nav-link" href="https://engineering.purdue.edu/ME"></a> Purdue ME
+									</li>
+									<li class="nav-item">
+										<a class="fa fa-instagram nav-link" href="https://www.instagram.com/purdue.me/"></a>
+										purdue.me
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+				</div>
+			</div>
+		
+			<div class="row">
+				<div class="col-10 offset-1">
+					<hr>
+					<h1>Recent News</h1>
+					<hr>
+					
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Madi, Maggie, and Prof. Jain present their work at IEEE RO-MAN 2025 in Eindhoven!</h4>
+                            <p>August, 2025</p>
+							<p>Madi and Maggie present their papers at the conference.</p>
+							<div class="container-fluid padding-bottom-30">
+								<div class="row-fluid">	
+									<div id="PhotoCarousel-ROMAN_2025" class="carousel slide" data-bs-ride="carousel">
+										
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#PhotoCarousel-ROMAN_2025" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#PhotoCarousel-ROMAN_2025" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										
+										
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="./images/conferences/ROMAN-2025-1.jpg" alt="August 2025" class="img-fluid d-block w-100">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>August, 2025</h5>
+													<p>Madi, Maggie, and Prof. Jain at IEEE RO-MAN!</p>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<img src="./images/conferences/ROMAN-2025-2.jpg" alt="August 2025" class="img-fluid d-block w-100">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>August, 2025</h5>
+													<p>Maggie presents at IEEE RO-MAN!</p>
+												</div>
+											</div>
+										</div>
+
+										<button class="carousel-control-prev" type="button" data-bs-target="#PhotoCarousel-ROMAN_2025" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#PhotoCarousel-ROMAN_2025" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+                            <hr/>
+						</div>
+					</div>
+					
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Jake defends his Ph.D. thesis!</h4>
+                            <p>August, 2025</p>
+							<p>Jacob Hunter successfully defends his Ph.D. thesis! Congrats Jake!
+							</p>
+							<div class="container-fluid padding-bottom-30">
+								<div class="row-fluid">	
+									<div id="PhotoCarousel-Jake_2025" class="carousel slide" data-bs-ride="carousel">
+										
+										<div class="carousel-indicators">
+											<button type="button" data-bs-target="#PhotoCarousel-Jake_2025" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+											<button type="button" data-bs-target="#PhotoCarousel-Jake_2025" data-bs-slide-to="1" aria-label="Slide 2"></button>
+										</div>
+										
+										
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="./images/group-photos/hunter-defense-2025-1.jpg" alt="August 2025" class="img-fluid d-block w-100">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>August, 2025</h5>
+													<p>Jake and Prof. Jain</p>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<img src="./images/group-photos/hunter-defense-2025-2.jpg" alt="August 2025" class="img-fluid d-block w-100">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>August, 2025</h5>
+													<p>Jake and Prof. Reid Smith</p>
+												</div>
+											</div>
+
+											<div class="carousel-item">
+												<img src="./images/group-photos/hunter-defense-2025-3.jpg" alt="August 2025" class="img-fluid d-block w-100">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>August, 2025</h5>
+													<p>Jake's defence</p>
+												</div>
+											</div>
+										</div>
+
+										<button class="carousel-control-prev" type="button" data-bs-target="#PhotoCarousel-Jake_2025" data-bs-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Previous</span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#PhotoCarousel-Jake_2025" data-bs-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="visually-hidden">Next</span>
+										</button>
+									</div>
+								</div>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Madi for being selected for one of the 2025 SURF Mentor Awards, along with being selected for the MIT ME Rising Stars Workshop!</h4>
+                            <p>August, 2025</p>
+							<p>The Rising Stars in Mechanical Engineering workshop is aimed at women graduate students and Ph.D holders considering future careers in academia.</p>
+                            <hr/>
+						</div>
+					</div>
+					
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Madi on being selected as a DSCD (Dynamic Systems and Control Division) Rising Star for 2025!</h4>
+                            <p>July, 2025</p>
+							<p>The DSCD Rising Stars talks are designed to help kick-start the careers of postdocs and senior Ph.D. students nearing graduation.</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Sibi for acceptance of his IEEE ITSC paper!</h4>
+                            <p>July, 2025</p>
+                            <p> The conference will take place at Gold Coast, Australia between November 18-21, 2025.</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Madi and Maggie for acceptance of their IEEE RO-MAN papers!</h4>
+                            <p>June, 2025</p>
+                            <p> The conference will take place at Eindhoven, Netherlands between August 25-29, 2025.</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Demetrius for acceptance of his ASME DSC Letters paper!</h4>
+                            <p>June, 2025</p>
+                            <p> Paper Title: Set-Based Robust Control Co-Design: Application to a Hybrid Thermal Management System.</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Congrats to Demetrius for being awarded the Herrick Assistantship!</h4>
+                            <p>May, 2025</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Madi is selected to attend the CPS Rising Stars 2025 Workshop!</h4>
+                            <p>February 18th, 2025</p>
+                            <p> This workshop aims to identify and mentor outstanding PhD students and postdocs who are interested in pursuing academic careers in Cyber-Physical Systems (CPS) related areas. Congrats Madi!</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Pandu Successfully Defends his M.S. Thesis!</h4>
+                            <p>February 4th, 2025</p>
+                            <p> Pandu Dewanatha successfully defends his M.S. Thesis. Congrats Pandu!</p>
+                                <div class="container-fluid padding-bottom-30">
+                                    <div class="row-fluid">	
+                                        <div id="PhotoCarousel-Pandu_2025" class="carousel slide" data-bs-ride="carousel">
+                                            
+                                            <div class="carousel-indicators">
+                                                <button type="button" data-bs-target="#PhotoCarousel-Pandu_2025" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                <button type="button" data-bs-target="#PhotoCarousel-Pandu_2025" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            </div>
+                                            
+                                            
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src="./images/group-photos/Pandu-Defense-Jan-2025-1.png" alt="July 2024" class="img-fluid d-block w-100">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>February 4th, 2025</h5>
+                                                        <p>Congrats Pandu!</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="carousel-item ">
+                                                    <img src="./images/group-photos/Pandu-Defense-Jan-2025-2.png" alt="July 2024" class="img-fluid d-block w-100">
+                                                    <div class="carousel-caption d-none d-md-block">
+                                                        <h5>February 4th, 2025</h5>
+                                                        <p>Congrats Pandu!</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+    
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#PhotoCarousel-Pandu_2025" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#PhotoCarousel-Pandu_2025" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr/>            
+                        </div>
+                    </div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Madi is awarded the 2024 Hommert Engineering Excellence Fellowship!</h4>
+                            <p>December 5th, 2024</p>
+                            <p> The Hommert Engineering Excellence Fellowship goes to an outstanding female graduate student enrolled in Mechanical Engineering who has provided excellent service to the School or Purdue community. Congrats Madi!</p>
+                            <hr/>
+						</div>
+					</div>
+					
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Jake is awarded the 2024 Dr. Anil Bajaj Outstanding Service Scholarship!</h4>
+                            <p>December 4th, 2024</p>
+                            <p> The Dr. Anil K. Bajaj Outstanding Service Scholarship recognizes mechanical engineering graduate students who provide outstanding service to the mechanical engineering graduate student community. Congrats Jake!</p>
+                            <div class="container-fluid padding-bottom-30">
+								<div class="row-fluid">	
+									<div id="PhotoCarousel-start" class="carousel slide" data-bs-ride="carousel">
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="./images/conferences/CPS2024_Site_Visit_Jake.jpg" alt="September 2024" class="img-fluid d-block w-100						">
+												<div class="carousel-caption d-none d-md-block">
+													<h5>December 4th, 2024</h5>
+													<p>Jake at the 2024 Annual NSF CPS Site Visit.</p>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+							</div>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+                        <div class="col-lg-1 col-sm-2">
+                            <i class="fa fa-newspaper-o fa-3x"></i>
+                        </div>
+                        <div class="col-lg-11 col-sm-10">
+                            <h4>Madi is awarded the Spring 2024 Lambert Graduate Teaching Fellowship!</h4>
+                            <p>December 4th, 2024</p>
+                            <p> The Ward A. Lambert Graduate Teaching Fellowship is awarded to graduate students interested in pursuing a teaching career in academia. Congrats Madi!</p>
+                            <hr/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col">
+							<p><a class="btn btn-outline-dark" href="./news/CurrentYear.html" role="button">Older Posts</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container padding-bottom-20">
+			<div class="row align-items-center">
+				<div class="col-10 offset-1">
+					<hr/>
+					<h1 style="font-size:200%;text-align: center;">Past and Current Funding Sources<br></h1>
+					<hr/>
+					<img src="images/sponsor_logos/allTogetherTiered.jpg" class="img-fluid" style="max-height: 600px">
+				</div>
+			</div>
+		</div>
+
+		<div class="container padding-bottom-20">
+			<div class="row align-items-center">
+				<div class="col-10 offset-1">
+					<hr/>
+					<h1 style="font-size:200%;text-align: center;">Media</h1>
+					<hr/>
+				</div>
+			</div>
+
+			<div class="row padding-bottom-30">
+
+				<div class="col-md-2 col-sm-0">
+				</div>
+
+				<div class="col-md-1 col-sm-12 ">
+
+					<a href="https://medium.com/purdue-engineering/why-dont-we-trust-robots-2459350e6504">
+						<img src="images/media-logos/medium.jpg" class="img-responsive center-block"
+							style="max-height: 60px">
+					</a>
+
+				</div>
+
+				<div class="col-md-2 col-sm-12">
+					<a href="https://www.forbes.com/sites/neerajain/#cd537c74d24e">
+						<img src="images/media-logos/forbes.jpg" class="img-fluid" style="max-height: 60px">
+					</a>
+				</div>
+
+				<div class="col-md-2 col-sm-12">
+					<a
+						href="https://www.npr.org/2019/04/12/712631724/faa-officials-to-meet-with-airlines-and-pilots-to-discuss-boeing-737-max">
+						<img src="images/media-logos/NPR.png" class="img-fluid" style="max-height: 60px">
+					</a>
+				</div>
+
+				<div class="col-md-2 col-sm-12">
+					<a
+						href="https://www.axios.com/robot-artificial-intelligence-trust-tightrope-7d273b33-4486-4e19-82db-384874cda270.html">
+						<img src="images/media-logos/axios.jpg" class="img-fluid" style="max-height: 60px">
+					</a>
+				</div>
+
+				<div class="col-md-1 col-sm-12">
+					<a href="https://www.parsingscience.org/2019/04/02/neera-jain/">
+						<img src="images/media-logos/parsingscience.jpg" class="img-fluid" style="max-height: 60px">
+					</a>
+				</div>
+
+				<div class="col-md-2 col-sm-0">
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</main>
+	<!-- footer of the page -->
+	<footer id="footer">
+		<!-- footer top -->
+		<div class="footer-top bg-shark">
+			<div class="container padding-top-30">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="holder">
+							<img src="./images/Eng-White.png" style="width:200px;height:auto;" class="mx-auto d-block">
+							<hr/>
+							<div align="center">
+								<p>Copyright © 2015-2023 JAIN Research Lab - All Rights Reserved</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<!-- include JavaScript Plugins -->
+	<script type="text/javascript" src="js/plugins.js"></script>
+
+	<script src="js/jquery.backstretch.js"></script>
+	<script>
+		$("#shifting").backstretch([
+			"./images/city_bg2.jpg",
+			"./images/steel-jain.jpg",
+			"./images/science-thoughts.jpg"
+		], {
+			fade: 750,
+			duration: 5000
+		});	
+	</script>
+
+	<!-- Bootstrap 5.0 js -->
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
